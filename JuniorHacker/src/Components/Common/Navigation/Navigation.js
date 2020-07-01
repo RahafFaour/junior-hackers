@@ -22,7 +22,7 @@ import yoreemlogo from "../../../Images/yorfooter.png"
                             <Link to="donate" className="linkto">Donate </Link>
                         </Navigation>
                     </Drawer> :
-                    <Header id="fixedheader" className="header-color" title={<div><img id="yoreemlogo" src={yoreemlogo} alt="logo" />  <img id="pachalogo" src={logo} alt="logo"style={{width: 222,height:33,marginLeft:20}}/></div>}  scroll>
+                    <Header id="fixedheader" className="header-color" title={<div><img id="yoreemlogo" src={yoreemlogo} alt="logo" />  <img id="pachalogo" src={logo} alt="logo"style={{width: 120,height:33,paddingLeft: 10,}}/></div>}  scroll>
                         <Navigation id="nav">
                         <Link to="/" className="linkto"><h5>Home</h5></Link>
                         <div className="subnav">
