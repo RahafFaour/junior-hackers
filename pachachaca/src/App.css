@@ -1,0 +1,100 @@
+.header-color {
+  background: #a80077;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header-color .linkto:hover{
+  background: #dd3e54;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:black;
+  }
+#fixedheader{
+  position: fixed;
+}
+#pachalogo{
+  width:50px; 
+  /* mix-blend-mode: multiply; */
+
+}
+#yoreemlogo{
+width:50px; 
+height: 50%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnavbtn:hover{
+  color: black;
+}
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background: #dd3e54;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #a80077;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  margin: auto;
+  width: 10%;
+  text-align: center;
+  float: right;
+  border: 3px solid none;
+  padding: 10px;  color: white;
+  font-size:20px;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background: #dd3e54;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  color: black;
+}
+.subnav:hover .subnav-content {
+  display: block;
+
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.ui.image{
+  width: 50%;
+}
