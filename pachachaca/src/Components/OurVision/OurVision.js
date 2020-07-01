@@ -1,6 +1,7 @@
 import 'semantic-ui-css/semantic.min.css'
 import _ from 'lodash'
 import React, { Component } from 'react'
+import Navication from "../Common/Navication/Navication"
 
 import {
   Container,
@@ -132,7 +133,6 @@ export default class OurVision extends Component {
 
   unStickTopMenu = () => this.setState({ menuFixed: false })
 
-import Navication from "../Common/Navication/Navication"
 
 
   render() {
@@ -140,6 +140,7 @@ import Navication from "../Common/Navication/Navication"
 
     return (
       <div>
+        <Navication/>
 
         <Container text style={{ marginTop: '2em' }}>
       
@@ -191,8 +192,6 @@ import Navication from "../Common/Navication/Navication"
           {_.times(1, (i) => (
             <Paragraph1 key={i} />
           ))}
-        <Navication/>
-      </div>
     )
   }
 }
