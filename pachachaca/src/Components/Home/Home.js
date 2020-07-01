@@ -58,46 +58,6 @@ class Home extends Component {
       </div>
     );
 
-<<<<<<< HEAD
-        return (
-            <Layout>
-                {window.screen.width <= 1022 ?
-                    <Drawer id="fixedheader" title="Pachachaca" >
-                        <Navigation >
-                            <Link to="/" className="linkto">Home</Link>
-                            <Link to="ourProgramme" className="linkto">OurProgramme</Link>
-                            <Link to="aboutUs" className="linkto">AboutUs</Link>
-                            <Link to="ourVision" className="linkto">OurVision</Link>
-                            <Link to="album" className="linkto">Album</Link>
-                            <Link to="newsletters" className="linkto">Newsletters </Link>
-                            <Link to="donate" className="linkto">Donate </Link>
-                        </Navigation>
-                    </Drawer> :
-                    <Header id="fixedheader" className="header-color" title={<div><img id="pachalogo" src={logo} alt="logo"/>  <img id="pachalogo" src={logo} alt="logo"/></div>}  scroll>
-                        <Navigation id="nav">
-                        <Link to="/" className="linkto">Home</Link>
-                            <Link to="ourProgramme" className="linkto">OurProgramme</Link>
-                            <Link to="aboutUs" className="linkto">AboutUs</Link>
-                            <Link to="ourVision" className="linkto">OurVision</Link>
-                            <Link to="album" className="linkto">Album</Link>
-                            <Link to="newsletters" className="linkto">Newsletters </Link>
-                            <Link to="donate" className="linkto">Donate </Link>
-                        </Navigation>
-  
-                    </Header>}
-                <SimpleImageSlider
-                    width={`100%`}
-                    height={`100%`}
-                    images={images}
-                />
-                <Content>
-                     <div className="page-content" />
-                 </Content>
-            </Layout>
-        );
     }
-=======
-  }
->>>>>>> bc6499564a2f3452b1cfec513ea4bdc0cd6e7045
 }
 export default Home;
