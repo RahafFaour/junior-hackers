@@ -1,8 +1,7 @@
 import 'semantic-ui-css/semantic.min.css'
-
 import _ from 'lodash'
 import React, { Component } from 'react'
-<<<<<<< HEAD
+
 import {
   Container,
   Divider,
@@ -111,8 +110,6 @@ const Paragraph3 = () => (
   </p>
 )
 
-
-
 export default class OurVision extends Component {
   state = {
     menuFixed: false,
@@ -134,38 +131,20 @@ export default class OurVision extends Component {
   unStickOverlay = () => this.setState({ overlayFixed: false })
 
   unStickTopMenu = () => this.setState({ menuFixed: false })
-=======
+
 import Navication from "../Common/Navication/Navication"
->>>>>>> 50a27b0f575597e450ab9528708f2d0e150cd027
+
 
   render() {
     const { menuFixed, overlayFixed, overlayRect } = this.state
 
     return (
       <div>
-<<<<<<< HEAD
-        {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
-            background color.
-          */}
-        <style>
-          {`
-          html, body {
-            background: #fff;
-          }
-        `}
-        </style>
 
         <Container text style={{ marginTop: '2em' }}>
-        {/* <Header as='h1'>About us</Header> */}
-          {/* <p>
-            This example shows how to use lazy loaded images, a sticky menu, and a simple text
-            container
-          </p> */}
+      
         </Container>
-        
-        {/* Attaching the top menu is a simple operation, we only switch `fixed` prop and add another style if it has
-            gone beyond the scope of visibility
-          */}
+ 
         <Visibility
           onBottomPassed={this.stickTopMenu}
           onBottomVisible={this.unStickTopMenu}
@@ -182,9 +161,6 @@ import Navication from "../Common/Navication/Navication"
                 <Image size='mini' src='/logo.png' />
               </Menu.Item>
               <Menu.Item header>About us</Menu.Item>
-              {/* <Menu.Item as='a'>Blog</Menu.Item>
-              <Menu.Item as='a'>Articles</Menu.Item> */}
-
               <Menu.Menu position='right'>
                 <Dropdown text='Dropdown' pointing className='link item'>
                   <Dropdown.Menu>
@@ -215,19 +191,11 @@ import Navication from "../Common/Navication/Navication"
           {_.times(1, (i) => (
             <Paragraph1 key={i} />
           ))}
-=======
         <Navication/>
       </div>
     )
   }
 }
->>>>>>> 50a27b0f575597e450ab9528708f2d0e150cd027
-
-          {/* Example with overlay menu is more complex, SUI simply clones all elements inside, but we should use a
-              different approach.
-              An empty Visibility element controls the need to change the fixing of element below, it also uses height
-              and width params received from its ref for correct display.
-            */}
           <Visibility
             offset={80}
             once={false}
@@ -258,14 +226,6 @@ import Navication from "../Common/Navication/Navication"
               </Menu.Item>
             </Menu>
           </div>
-
-          {/* {_.times(1, (i) => (
-            <Paragraph key={i} />
-          ))}
-          <LeftImage /> */}
-
-          {/* <Paragraph />
-          <RightImage /> */}
           <br/>
           <Menu.Item header><b>Mission</b><hr/></Menu.Item>
           {_.times(1, (i) => (
@@ -355,9 +315,7 @@ import Navication from "../Common/Navication/Navication"
             Zo worden kinderen/jongeren ondersteund in hun opleiding en alleenstaande ouders geholpen bij het vinden van werk en goede 
             kinderopvang. 
             </p>
-          {/* {_.times(1, (i) => (
-            <Paragraph3 key={i} />
-          ))} */}
+
         </Container>
 
         <Segment inverted style={{ margin: '5em 0em 0em', padding: '5em 0em' }} vertical>
