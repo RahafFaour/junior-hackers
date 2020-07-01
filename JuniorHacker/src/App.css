@@ -101,10 +101,11 @@ body {
 #contact {
   background: #524646;
   height: 100%;
-  position: absolute;
+  position: relative;
   width: 100%;
   padding-top: 96px;
   padding-bottom: 102px;
+  justify-content: center;
   margin-bottom: -500;
   color: #636363;
 }
@@ -141,7 +142,7 @@ body {
   display: inline-block;
   float: left;
   width: 6%;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 #contact input,
 #contact textarea,
@@ -173,7 +174,7 @@ body {
   height: auto;
   display: inline-block;
   border-radius: 5px;
-  margin-left: 26%;
+  margin-left: 15%;
   padding: 10px;
 }
 #contact button.submit:hover {

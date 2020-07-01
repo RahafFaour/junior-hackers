@@ -8,6 +8,7 @@ import OurVision from './Components/OurVision/OurVision'
 import Album from './Components/Album/Album'
 import ContactUs from './Components/ContactUs/ContactUs'
 import Donate from './Components/Donate/Donate'
+import NewsLetter from './Components/NewsLetter/NewsLetter'
 
 class App extends Component {
     render() {
@@ -25,6 +26,7 @@ class App extends Component {
                     <Route exact path= '/album' component={Album}/>
                     <Route exact path= '/contactus' component={ContactUs}/>
                     <Route exact path= '/donate' component={Donate}/>
+                    <Route exact path= '/newsletter' component={NewsLetter}/>
                 </Switch>   
             </div>
         </BrowserRouter>

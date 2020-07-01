@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import image1 from '../../Images/image1.jpg'
 import image2 from '../../Images/image2.jpg'
 import image3 from '../../Images/image3.jpg'
-import Navication from "../Common/Navication/Navication"
+import Navigation from "../Common/Navigation/Navigation"
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import "react-animated-slider/build/horizontal.css";
@@ -41,7 +41,7 @@ class Home extends Component {
 
     return (
       <div>
-        <Navication />
+        <Navigation />
         <Slider autoplay={2000} className="slider-wrapper">
           {content.map((item, index) => (
             <div

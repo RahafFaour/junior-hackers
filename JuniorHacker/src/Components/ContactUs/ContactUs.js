@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navication from "../Common/Navication/Navication"
+import Navigation from "../Common/Navigation/Navigation"
+import Footer from "../Common/Footer/Footer"
 
 class Newsletters extends Component {
   render() {
@@ -18,7 +19,7 @@ class Newsletters extends Component {
     return (
 
    <div>
-          <Navication/>
+      <Navigation/>
       <section id="contact">
 
          <div className="row section-head">
@@ -81,7 +82,7 @@ class Newsletters extends Component {
       </div>
       </section>
 
-
+<Footer/>
    </div>
 
     );

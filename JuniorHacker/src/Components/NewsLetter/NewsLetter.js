@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import Navigation from "../Common/Navigation/Navigation"
 
-export class Donate extends Component {
+export class NewsLetter extends Component {
     render() {
         return (
             <div>
-                <Navigation/>
-               <h1>Donate page</h1>
+               <Navigation/> 
             </div>
         )
     }
 }
 
-export default Donate
+export default NewsLetter

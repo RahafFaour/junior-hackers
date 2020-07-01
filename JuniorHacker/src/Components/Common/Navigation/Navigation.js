@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Layout, Header, Navigation, Drawer } from 'react-mdl'
 import { Link } from 'react-router-dom';
-import logo from "../../../Images/pachalogo.jpg"
-import yoreemlogo from "../../../Images/yoreemlogo.png"
+import logo from "../../../Images/pachalogo2.png"
+import yoreemlogo from "../../../Images/yorfooter.png"
 
-export class Navication extends Component {
+ class Navigations extends Component {
     
     render() {
         return (
@@ -17,11 +17,12 @@ export class Navication extends Component {
                             <Link to="aboutus" className="linkto">About Us</Link>
                             <Link to="ourvision" className="linkto">Our Vision</Link>
                             <Link to="album" className="linkto">Album</Link>
+                            <Link to="newsletter" className="linkto"><h5>Newsletters </h5></Link>
                             <Link to="contactus" className="linkto">Contact Us </Link>
                             <Link to="donate" className="linkto">Donate </Link>
                         </Navigation>
                     </Drawer> :
-                    <Header id="fixedheader" className="header-color" title={<div><img id="yoreemlogo" src={yoreemlogo} alt="logo" />  <img id="pachalogo" src={logo} alt="logo" style={{marginLeft: 20,}}/></div>}  scroll>
+                    <Header id="fixedheader" className="header-color" title={<div><img id="yoreemlogo" src={yoreemlogo} alt="logo" />  <img id="pachalogo" src={logo} alt="logo"style={{width: 222,height:33,marginLeft:20}}/></div>}  scroll>
                         <Navigation id="nav">
                         <Link to="/" className="linkto"><h5>Home</h5></Link>
                         <div className="subnav">
@@ -37,6 +38,7 @@ export class Navication extends Component {
                             <Link to="aboutus" className="linkto" ><h5>About Us</h5></Link>
                             <Link to="ourvision" className="linkto"><h5>Our Vision</h5></Link>
                             <Link to="album" className="linkto"><h5>Album</h5></Link>
+                            <Link to="newsletter" className="linkto"><h5>Newsletters</h5> </Link>
                             <Link to="contactus" className="linkto"><h5>Contact Us</h5></Link>
                             <Link to="donate" className="linkto"><h5>Donate</h5> </Link>
                         </Navigation>
@@ -47,4 +49,4 @@ export class Navication extends Component {
     }
 }
 
-export default Navication
+export default Navigations
