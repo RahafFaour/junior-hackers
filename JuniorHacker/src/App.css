@@ -100,8 +100,12 @@ body {
 }
 #contact {
   background: #524646;
+  height: 100%;
+  position: absolute;
+  width: 100%;
   padding-top: 96px;
   padding-bottom: 102px;
+  margin-bottom: -500;
   color: #636363;
 }
 #contact .section-head { margin-bottom: 42px; }
@@ -127,7 +131,7 @@ body {
   color: #ebeeee;
 }
 
-#contact .header-col { padding-top: 6px; }
+
 
 #contact form { margin-bottom: 30px; }
 #contact label {

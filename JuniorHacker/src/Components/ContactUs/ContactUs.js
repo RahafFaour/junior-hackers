@@ -16,8 +16,9 @@ class Newsletters extends Component {
     }
 
     return (
+
    <div>
-      <Navication/>
+          <Navication/>
       <section id="contact">
 
          <div className="row section-head">
@@ -38,13 +39,13 @@ class Newsletters extends Component {
 
          <div className="row">
             <div className="eight columns">
-
+            
                <form action="" method="post" id="contactForm" name="contactForm">
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35"  id="contactName" name="contactName" onChange={this.handleChange}/>
                   </div>
 
                   <div>
@@ -69,6 +70,7 @@ class Newsletters extends Component {
                      </span>
                   </div>
 					</fieldset>
+               
 				   </form>
 
            <div id="message-warning"> Please try again!</div>
@@ -77,7 +79,9 @@ class Newsletters extends Component {
 				   </div>
            </div>
       </div>
-   </section>
+      </section>
+
+
    </div>
 
     );

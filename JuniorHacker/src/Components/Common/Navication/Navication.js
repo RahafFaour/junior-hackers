@@ -17,7 +17,7 @@ export class Navication extends Component {
                             <Link to="aboutus" className="linkto">About Us</Link>
                             <Link to="ourvision" className="linkto">Our Vision</Link>
                             <Link to="album" className="linkto">Album</Link>
-                            <Link to="newsletters" className="linkto">Newsletters </Link>
+                            <Link to="contactus" className="linkto">Contact Us </Link>
                             <Link to="donate" className="linkto">Donate </Link>
                         </Navigation>
                     </Drawer> :
@@ -37,7 +37,7 @@ export class Navication extends Component {
                             <Link to="aboutus" className="linkto" ><h5>About Us</h5></Link>
                             <Link to="ourvision" className="linkto"><h5>Our Vision</h5></Link>
                             <Link to="album" className="linkto"><h5>Album</h5></Link>
-                            <Link to="newsletters" className="linkto"><h5>Newsletters</h5></Link>
+                            <Link to="contactus" className="linkto"><h5>Contact Us</h5></Link>
                             <Link to="donate" className="linkto"><h5>Donate</h5> </Link>
                         </Navigation>
   
