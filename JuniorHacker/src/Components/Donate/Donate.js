@@ -5,7 +5,8 @@ export class Donate extends Component {
     render() {
         return (
             <div>
-               <Navication/>
+                <Navication/>
+               <h1>Donate page</h1>
             </div>
         )
     }

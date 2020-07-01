@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navication from "../Common/Navication/Navication"
 
 class Newsletters extends Component {
   render() {
@@ -15,6 +16,8 @@ class Newsletters extends Component {
     }
 
     return (
+   <div>
+      <Navication/>
       <section id="contact">
 
          <div className="row section-head">
@@ -75,6 +78,8 @@ class Newsletters extends Component {
            </div>
       </div>
    </section>
+   </div>
+
     );
   }
 }

@@ -36,12 +36,12 @@ height: 50%;
   text-decoration: none;
 }
 
-.subnavv {
+.subnav {
   float: left;
   overflow: hidden;
 }
 
-.subnavv .subnavvbtn {
+.subnav .subnavbtn {
   font-size: 16px;  
   border: none;
   outline: none;
@@ -51,16 +51,16 @@ height: 50%;
   font-family: inherit;
   margin: 0;
 }
-.subnavvbtn:hover{
+.subnavbtn:hover{
   color: black;
 }
-.navbar a:hover, .subnavv:hover .subnavvbtn {
+.navbar a:hover, .subnav:hover .subnavbtn {
   background: #dd3e54;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.subnavv-content {
+.subnav-content {
   display: none;
   position: absolute;
   right: 0;
@@ -71,7 +71,7 @@ height: 50%;
   z-index: 1;
 }
 
-.subnavv-content a {
+.subnav-content a {
   margin: auto;
   width: 10%;
   text-align: center;
@@ -82,12 +82,12 @@ height: 50%;
   text-decoration: none;
 }
 
-.subnavv-content a:hover {
+.subnav-content a:hover {
   background: #dd3e54;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  color: black;
 }
-.subnavv:hover .subnavv-content {
+.subnav:hover .subnav-content {
   display: block;
 
 }

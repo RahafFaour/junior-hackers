@@ -57,6 +57,7 @@ class Home extends Component {
         </Slider>
       </div>
     );
+
     }
 }
 export default Home;
