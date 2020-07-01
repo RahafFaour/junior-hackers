@@ -2,6 +2,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 import _ from 'lodash'
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import {
   Container,
   Divider,
@@ -133,12 +134,16 @@ export default class OurVision extends Component {
   unStickOverlay = () => this.setState({ overlayFixed: false })
 
   unStickTopMenu = () => this.setState({ menuFixed: false })
+=======
+import Navication from "../Common/Navication/Navication"
+>>>>>>> 50a27b0f575597e450ab9528708f2d0e150cd027
 
   render() {
     const { menuFixed, overlayFixed, overlayRect } = this.state
 
     return (
       <div>
+<<<<<<< HEAD
         {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
             background color.
           */}
@@ -210,6 +215,13 @@ export default class OurVision extends Component {
           {_.times(1, (i) => (
             <Paragraph1 key={i} />
           ))}
+=======
+        <Navication/>
+      </div>
+    )
+  }
+}
+>>>>>>> 50a27b0f575597e450ab9528708f2d0e150cd027
 
           {/* Example with overlay menu is more complex, SUI simply clones all elements inside, but we should use a
               different approach.
