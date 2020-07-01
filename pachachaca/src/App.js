@@ -18,10 +18,10 @@ class App extends Component {
             <div>
                 <Switch> 
                     <Route exact path= '/' component={Home}/>
-                    <Route exact path= '/OurProgramme' component={OurProgramme}/>
-                    <Route exact path= '/AboutUs' component={AboutUs}/>
-                    <Route exact path= '/OurVision' component={OurVision}/>
-                    <Route exact path= '/Album' component={Album}/>
+                    <Route exact path= '/ourprogramme' component={OurProgramme}/>
+                    <Route exact path= '/aboutus' component={AboutUs}/>
+                    <Route exact path= '/ourvision' component={OurVision}/>
+                    <Route exact path= '/album' component={Album}/>
                     <Route exact path= '/newsletters' component={Newsletters}/>
                     <Route exact path= '/donate' component={Donate}/>
                 </Switch>   

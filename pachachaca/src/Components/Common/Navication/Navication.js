@@ -13,10 +13,10 @@ export class Navication extends Component {
                     <Drawer >
                         <Navigation >
                             <Link to="/" className="linkto">Home</Link>
-                            <Link to="programm" className="linkto">Programm</Link>
-                            <Link to="Who" className="linkto">Who</Link>
-                            <Link to="mission" className="linkto">Mission and Vission</Link>
-                            <Link to="photos" className="linkto">Photos</Link>
+                            {/* <Link to="ourprogramme" className="linkto">Programm</Link> */}
+                            <Link to="aboutus" className="linkto">About Us</Link>
+                            <Link to="ourvision" className="linkto">Our Vission</Link>
+                            <Link to="album" className="linkto">Album</Link>
                             <Link to="newsletters" className="linkto">Newsletters </Link>
                             <Link to="donate" className="linkto">Donate </Link>
                         </Navigation>
@@ -24,19 +24,19 @@ export class Navication extends Component {
                     <Header id="fixedheader" className="header-color" title={<div><img id="yoreemlogo" src={yoreemlogo} alt="logo" />  <img id="pachalogo" src={logo} alt="logo" style={{marginLeft: 20,}}/></div>}  scroll>
                         <Navigation id="nav">
                         <Link to="/" className="linkto"><h5>Home</h5></Link>
-                        <div className="subnav">
-                            <button className="subnavbtn"><h5>Programm <i className="fa fa-caret-down"></i></h5></button>
-                            <div className="subnav-content">
+                        <div className="subnavv">
+                            <button className="subnavvbtn"><h5>Programm <i className="fa fa-caret-down"></i></h5></button>
+                            <div className="subnavv-content">
                             <a href="#company">Company</a>
                             <a href="#company">Company</a>
                             <a href="#team">Team</a>
                             <a href="#careers">Careers</a>
                             </div>
                         </div> 
-                            {/* <Link to="programm" className="linkto">Programm</Link> */}
-                            <Link to="Who" className="linkto" ><h5>Who</h5></Link>
-                            <Link to="mission" className="linkto"><h5>Mission and Vission</h5></Link>
-                            <Link to="photos" className="linkto"><h5>Photos</h5></Link>
+                            {/* <Link to="ourprogramme" className="linkto">Programm</Link> */}
+                            <Link to="aboutus" className="linkto" ><h5>About Us</h5></Link>
+                            <Link to="ourvision" className="linkto"><h5>Our Vission</h5></Link>
+                            <Link to="album" className="linkto"><h5>Album</h5></Link>
                             <Link to="newsletters" className="linkto"><h5>Newsletters</h5></Link>
                             <Link to="donate" className="linkto"><h5>Donate</h5> </Link>
                         </Navigation>

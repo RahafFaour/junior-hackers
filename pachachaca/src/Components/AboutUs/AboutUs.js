@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Header, Segment, Image, Grid} from 'semantic-ui-react'
+import Navication from "../Common/Navication/Navication"
 
 export class AboutUs extends Component {
 
@@ -8,7 +9,7 @@ export class AboutUs extends Component {
   render() {
     return (
       <div style={{backgroundImage: `url(/images/cloud1.jpg)`, height:'350px', backgroundSize: 'cover', padding:'50px', backgroundRepeat: 'no-repeat'}}>
-     
+     <Navication/>
      <Header as='h2' attached='top' style={{fontFamily: 'Arial Black', fontSize: '16px'}}>
             Our Story
             <Segment attached style={{fontFamily: 'Times New Roman', fontSize: '14px'}}>
