@@ -13,7 +13,7 @@ import yoreemlogo from "../../../Images/yorfooter.png"
                     <Drawer >
                         <Navigation >
                             <Link to="/" className="linkto">Home</Link>
-                            <Link to="ourprogramme" className="linkto">Oure Programme</Link>
+                            <Link to="ourprogramme" className="linkto">Our Programs</Link>
                             <Link to="aboutus" className="linkto">About Us</Link>
                             <Link to="ourvision" className="linkto">Our Vision</Link>
                             <Link to="album" className="linkto">Album</Link>
@@ -26,12 +26,15 @@ import yoreemlogo from "../../../Images/yorfooter.png"
                         <Navigation id="nav">
                         <Link to="/" className="linkto" style={{fontSize:20}}>Home</Link>
                         <div className="subnav">
-                            <button className="subnavbtn" style={{fontSize:20}}>Oure Programme <i className="fa fa-caret-down"></i></button>
+                            <button className="subnavbtn" style={{fontSize:20}}>Our Programs <i className="fa fa-caret-down"></i></button>
                             <div className="subnav-content">
-                            <a href="#company">Page 1</a>
-                            <a href="#company">Page 2</a>
-                            <a href="#team">Page 3</a>
-                            <a href="#careers">Page 4</a>
+
+                            <Link to='page1'>Page 1</Link>
+                            <Link to='page2'>Page 2</Link>
+                            <Link to='page3'>Page 3</Link>
+                            <Link to='page4'>Page 4</Link>
+                            
+
                             </div>
                         </div> 
                             {/* <Link to="ourprogram" className="linkto">Programm</Link> */}
