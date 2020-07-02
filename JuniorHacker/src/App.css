@@ -7,8 +7,10 @@
   background: #dd3e54;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-decoration: none;
   color:black;
   }
+
 #fixedheader{
   position: fixed;
 }
@@ -50,6 +52,8 @@ height: 50%;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  
+  
 }
 .subnavbtn:hover{
   color: black;
@@ -64,9 +68,7 @@ height: 50%;
   display: none;
   position: absolute;
   right: 0;
-  background: #3E5151;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: transparent;
   width: 100%;
   z-index: 1;
 }
@@ -77,15 +79,22 @@ height: 50%;
   text-align: center;
   float: right;
   border: 3px solid none;
-  padding: 10px;  color: white;
+  padding: 10px;
+  color: white;
   font-size:20px;
   text-decoration: none;
-}
+  margin-right: 50%;
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
 
 .subnav-content a:hover {
   background: #dd3e54;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  color: black;
+  background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+  color: black;
+  text-decoration: none;
+
 }
 .subnav:hover .subnav-content {
   display: block;
@@ -98,24 +107,35 @@ body {
 .ui.image{
   width: 50%;
 }
+
 #contact {
   background: #524646;
+  height: 100%;
+  position: relative;
+  width: 100%;
   padding-top: 96px;
   padding-bottom: 102px;
+  justify-content: center;
+  margin-bottom: -500;
   color: #636363;
 }
-#contact .section-head { margin-bottom: 42px; }
 
+.eight.columns{
+width: 100%;
+}
+
+#contact .section-head { margin-bottom: 42px; }
 #contact a, #contact a:visited  { color: #11ABB0; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
-  font: 18px/24px 'opensans-bold', sans-serif;
+  font: 18px/24px opensea-bold, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #EBEEEE;
   margin-bottom: 6px;
 }
+
 #contact h1 span { display: none; }
 #contact h1:before {
   font-family: 'FontAwesome';
@@ -127,18 +147,17 @@ body {
   color: #ebeeee;
 }
 
-#contact .header-col { padding-top: 6px; }
-
 #contact form { margin-bottom: 30px; }
 #contact label {
-  font: 15px/24px 'opensans-bold', sans-serif;
+  font: 15px/24px opensea-bold, sans-serif;
   margin: 12px 0;
   color: #EBEEEE;
   display: inline-block;
   float: left;
   width: 6%;
-  margin-left: 20%;
+  margin-left: 5%;
 }
+
 #contact input,
 #contact textarea,
 #contact select {
@@ -150,7 +169,7 @@ body {
   outline: none;
   font-size: 15px;
   line-height: 24px;
-  width: 50%;
+  width: 70%;
 }
 
 #contact input:focus,
@@ -159,6 +178,7 @@ body {
   color: #fff;
   background-color: #11ABB0;
 }
+
 #contact button.submit {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -169,17 +189,20 @@ body {
   height: auto;
   display: inline-block;
   border-radius: 5px;
-  margin-left: 26%;
+  margin-left: 10%;
   padding: 10px;
 }
+
 #contact button.submit:hover {
   color: #0D0D0D;
   background: #fff;
 }
+
 #contact span.required {
   color: #11ABB0;
   font-size: 13px;
 }
+
 #message-warning, #message-success {
   display: none;
   background: #0F0F0F;
@@ -201,4 +224,3 @@ body {
   left: 18px;
   top: 17px;
 }
-

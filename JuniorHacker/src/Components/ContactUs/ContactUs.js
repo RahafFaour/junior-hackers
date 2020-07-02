@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
-import Navication from "../Common/Navication/Navication"
+import Navigation from "../Common/Navigation/Navigation"
+import Footer from "../Common/Footer/Footer"
 
 class Newsletters extends Component {
   render() {
 
     if(this.props.data){
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
-      var email = this.props.data.email;
+      // var name = this.props.data.name;
+      // var street = this.props.data.address.street;
+      // var city = this.props.data.address.city;
+      // var state = this.props.data.address.state;
+      // var zip = this.props.data.address.zip;
+      // var phone= this.props.data.phone;
+      // var email = this.props.data.email;
       var message = this.props.data.contactmessage;
     }
 
     return (
+
    <div>
-      <Navication/>
+      <Navigation/>
       <section id="contact">
 
          <div className="row section-head">
@@ -38,13 +40,13 @@ class Newsletters extends Component {
 
          <div className="row">
             <div className="eight columns">
-
+            
                <form action="" method="post" id="contactForm" name="contactForm">
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35"  id="contactName" name="contactName" onChange={this.handleChange}/>
                   </div>
 
                   <div>
@@ -69,6 +71,7 @@ class Newsletters extends Component {
                      </span>
                   </div>
 					</fieldset>
+               
 				   </form>
 
            <div id="message-warning"> Please try again!</div>
@@ -77,7 +80,9 @@ class Newsletters extends Component {
 				   </div>
            </div>
       </div>
-   </section>
+      </section>
+
+<Footer/>
    </div>
 
     );
