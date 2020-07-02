@@ -5,8 +5,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'react-bnb-gallery'
+
 ReactDOM.render(
   <React.Fragment>
+   
     <App />
   </React.Fragment>,
   document.getElementById('root')
