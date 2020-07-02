@@ -109,6 +109,9 @@ body {
   margin-bottom: -500;
   color: #636363;
 }
+.eight.columns{
+width: 100%;
+}
 #contact .section-head { margin-bottom: 42px; }
 
 #contact a, #contact a:visited  { color: #11ABB0; }

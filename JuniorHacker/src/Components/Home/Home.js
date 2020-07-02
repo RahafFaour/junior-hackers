@@ -9,6 +9,7 @@ import "react-animated-slider/build/horizontal.css";
 import "normalize.css/normalize.css";
 import "./slider-animations.css";
 import "./styles.css";
+import Footer from "../Common/Footer/Footer"
 
 class Home extends Component {
   render() {
@@ -47,7 +48,7 @@ class Home extends Component {
             <div
               key={index}
               className="slider-content"
-              style={{ background: `url('${item.image}') no-repeat center center`, }}>
+              style={{ background: `url('${item.image}') no-repeat center center`}}>
               <div className="inner">
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
@@ -55,6 +56,7 @@ class Home extends Component {
             </div>
           ))}
         </Slider>
+        <Footer/>
       </div>
     );
 

@@ -47,7 +47,7 @@ button:hover {
   color: #FFFFFF;
   background: #222222;
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 .slider-wrapper {
@@ -61,6 +61,7 @@ button:hover {
 .slide {
   background-size: cover !important;
   height: 100%; 
+  margin-bottom: auto;
 
 }
 
@@ -147,48 +148,3 @@ transform: translate(-50%, -50%);
   max-width: 640px;
 }
 
-@media (max-height: 570px) {
-  .slider-wrapper, .slide {
-    height: calc(100vh - 75px);
-    margin-top: -14%;
-    padding-bottom: 100px;
-
-  }    
-}
-
-@media (max-width: 660px) {
-  .slider-wrapper, .slide {
-    height: calc(100%- 80px);
-    margin-top: -12%;
-
-    padding-bottom: 110px;
-
-  }    
-}
-
-@media (max-width: 790px) {
-  .slider-wrapper, .slide {
-    height: calc(100vh- 80px);
-    margin-top: -12%;
-    padding-bottom: 80px;
-
-  }    
-} 
-
-
- @media (max-height: 600px) {
-  .slider-content .inner h1 {
-    font-size: 32px;
-    margin-top: -14%;
-    padding-bottom: 100px;
-  }    
-}
-
-@media (max-width: 640px) {
-  .slider-content .inner h1 {
-    font-size: 32px;
-    margin-top: -14%;
-    padding-bottom: 100px;
-  }
-  
-}

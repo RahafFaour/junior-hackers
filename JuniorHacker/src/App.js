@@ -8,7 +8,7 @@ import OurVision from './Components/OurVision/OurVision'
 import Album from './Components/Album/Album'
 import ContactUs from './Components/ContactUs/ContactUs'
 import Donate from './Components/Donate/Donate'
-import NewsLetter from './Components/NewsLetter/NewsLetter'
+import NewsLetter from './Components/NewsLetter/Cards'
 
 class App extends Component {
     render() {

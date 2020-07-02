@@ -1,5 +1,5 @@
 import 'semantic-ui-css/semantic.min.css'
-import Navication from "../Common/Navication/Navication"
+import Navigation from "../Common/Navigation/Navigation"
 import _ from 'lodash'
 import React, { Component } from 'react'
 import {
@@ -124,7 +124,7 @@ export default class OurVision extends Component {
 
       <div>
 
-        <Navication />
+        <Navigation />
         
         {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
             background color.
