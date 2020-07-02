@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import { Header, Segment, Image, Grid } from 'semantic-ui-react'
+import { Header, Segment} from 'semantic-ui-react'
 import Navigation from "../Common/Navigation/Navigation"
+import personal from './personal.jpg'
+import './style.css'
 
-export class AboutUs extends Component {
+class AboutUs extends Component {
 
 
 
   render() {
     return (
-      <div style={{ backgroundImage: `url(/images/cloud1.jpg)`, height: '350px', backgroundSize: 'cover', padding: '50px', backgroundRepeat: 'no-repeat' }}>
+      <div  style={{ backgroundImage: `url(/images/cloud1.jpg)`, height: '270px', backgroundSize: 'cover', padding: '50px', backgroundRepeat: 'no-repeat'}}>
         <Navigation/>
         <Header as='h2' attached='top' style={{ fontFamily: 'Arial Black', fontSize: '16px' }}>
           Our Story
@@ -24,41 +26,21 @@ export class AboutUs extends Component {
         </Header>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <div>
-          <Grid columns='three' divided>
-            <Grid.Row floated='right'>
-              <div className='ui image'><Grid.Column floated='left'>
-                <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-                <Segment>I am Dareen Znbrakji</Segment>
-              </Grid.Column></div>
-              <br />
-              <div className='ui image'><Grid.Column floated='left'>
-                <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-              </Grid.Column></div>
-              <br />
-              <div className='ui image'><Grid.Column floated='left'>
-                <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-              </Grid.Column></div>
-            </Grid.Row>
-            <br /> <br />
-            <div>
-              <Grid.Row>
-                <div className='ui image'><Grid.Column floated='right'>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-                </Grid.Column></div>
-                <br />
-                <div className='ui image'><Grid.Column floated='right'>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-                </Grid.Column></div>
-                <br />
-                <div className='ui image' floated='right'><Grid.Column>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-                </Grid.Column></div>
-              </Grid.Row>
+        <div>
+        <div class="container">
+        <img src={personal} alt="Avatar" class="image"/>
+         <div class="overlay">My Name is John<br/>Volunteer</div>
             </div>
-          </Grid>
-
+            
         </div>
-
+        <div>
+        <div class="container" id="float">
+        <img src={personal} alt="Avatar" class="image"/>
+         <div class="overlay">My Name is John<br/>Volunteer</div>
+            </div>
+            
+        </div>
+        </div>
       </div>
     )
   }

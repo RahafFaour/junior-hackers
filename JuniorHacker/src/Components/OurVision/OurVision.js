@@ -280,7 +280,7 @@ export default class OurVision extends Component {
             </p>
             <br/> <br/>
         </Container>
-            <Footer/>
+            {/* <Footer/> */}
       </div>
     )
   }
