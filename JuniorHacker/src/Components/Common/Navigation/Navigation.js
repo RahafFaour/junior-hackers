@@ -28,10 +28,10 @@ import yoreemlogo from "../../../Images/yorfooter.png"
                         <div className="subnav">
                             <button className="subnavbtn" style={{fontSize:20}}>Oure Programme <i className="fa fa-caret-down"></i></button>
                             <div className="subnav-content">
-                            <a href="#company">Page 4</a>
-                            <a href="#company">Page 3</a>
-                            <a href="#team">Page 2</a>
-                            <a href="#careers">Page 1</a>
+                            <a href="#company">Page 1</a>
+                            <a href="#company">Page 2</a>
+                            <a href="#team">Page 3</a>
+                            <a href="#careers">Page 4</a>
                             </div>
                         </div> 
                             {/* <Link to="ourprogram" className="linkto">Programm</Link> */}
