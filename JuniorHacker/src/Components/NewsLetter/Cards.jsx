@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import NewsLitter from './NewsLetter'
 import './NewsLetter.css'
 import newsimage1 from '../../Images/newsimage1.jpg'
+import Footer from "../Common/Footer/Footer"
 
 export class Cards extends Component {
     render() {
@@ -34,6 +35,8 @@ export class Cards extends Component {
                     </div>
 
                 </div>
+                <br/> <br/> <br/> <br/>
+                <Footer/>
             </div>
         )
     }

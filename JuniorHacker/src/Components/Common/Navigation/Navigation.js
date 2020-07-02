@@ -24,23 +24,23 @@ import yoreemlogo from "../../../Images/yorfooter.png"
                     </Drawer> :
                     <Header id="fixedheader" className="header-color" title={<div><img id="yoreemlogo" src={yoreemlogo} alt="logo" />  <img id="pachalogo" src={logo} alt="logo"style={{width: 120,height:33,paddingLeft: 10,}}/></div>}  scroll>
                         <Navigation id="nav">
-                        <Link to="/" className="linkto"><h5>Home</h5></Link>
+                        <Link to="/" className="linkto" style={{fontSize:20}}>Home</Link>
                         <div className="subnav">
-                            <button className="subnavbtn"><h5>Oure Programme <i className="fa fa-caret-down"></i></h5></button>
+                            <button className="subnavbtn" style={{fontSize:20}}>Oure Programme <i className="fa fa-caret-down"></i></button>
                             <div className="subnav-content">
-                            <a href="#company">Company</a>
-                            <a href="#company">Company</a>
-                            <a href="#team">Team</a>
-                            <a href="#careers">Careers</a>
+                            <a href="#company">Page 4</a>
+                            <a href="#company">Page 3</a>
+                            <a href="#team">Page 2</a>
+                            <a href="#careers">Page 1</a>
                             </div>
                         </div> 
                             {/* <Link to="ourprogram" className="linkto">Programm</Link> */}
-                            <Link to="aboutus" className="linkto" ><h5>About Us</h5></Link>
-                            <Link to="ourvision" className="linkto"><h5>Our Vision</h5></Link>
-                            <Link to="album" className="linkto"><h5>Album</h5></Link>
-                            <Link to="newsletter" className="linkto"><h5>Newsletters</h5> </Link>
-                            <Link to="contactus" className="linkto"><h5>Contact Us</h5></Link>
-                            <Link to="donate" className="linkto"><h5>Donate</h5> </Link>
+                            <Link to="aboutus" className="linkto" style={{fontSize:20}} >About Us </Link>
+                            <Link to="ourvision" className="linkto" style={{fontSize:20}}>Our Vision</Link>
+                            <Link to="album" className="linkto" style={{fontSize:20}}>Album</Link>
+                            <Link to="newsletter" className="linkto" style={{fontSize:20}}>Newsletters</Link>
+                            <Link to="contactus" className="linkto" style={{fontSize:20}}>Contact Us </Link>
+                            <Link to="donate" className="linkto" style={{fontSize:20}}>Donate </Link>
                         </Navigation>
   
                     </Header>}

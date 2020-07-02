@@ -19,7 +19,7 @@ class Home extends Component {
         description:
          "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
         button: "Read More",
-        image: image1,
+        image: image2,
         user: "Luan Gjokaj",
       },
       {
@@ -27,7 +27,7 @@ class Home extends Component {
         description:
           "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
         button: "Discover",
-        image: image2,
+        image: image1,
         user: "Erich Behrens",
       },
       {

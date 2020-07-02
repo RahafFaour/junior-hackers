@@ -2,17 +2,15 @@ import 'semantic-ui-css/semantic.min.css'
 import Navigation from "../Common/Navigation/Navigation"
 import _ from 'lodash'
 import React, { Component } from 'react'
+import Footer from "../Common/Footer/Footer"
+
 import {
   Container,
-  Divider,
   //Dropdown,
-  Grid,
-  Header,
+
   Icon,
   Image,
-  List,
   Menu,
-  Segment,
   Visibility,
 } from 'semantic-ui-react'
 
@@ -280,66 +278,9 @@ export default class OurVision extends Component {
             Zo worden kinderen/jongeren ondersteund in hun opleiding en alleenstaande ouders geholpen bij het vinden van werk en goede 
             kinderopvang. 
             </p>
-         
+            <br/> <br/>
         </Container>
-
-        <Segment inverted style={{ margin: '5em 0em 0em', padding: '5em 0em' }} vertical>
-          <Container textAlign='center'>
-            <Grid columns={4} divided stackable inverted>
-              <Grid.Row>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Pages' />
-                  <List link inverted>
-                    <List.Item as='a'href='Home'>Homepage</List.Item>
-                    <List.Item as='a' href='Donate'>Donate</List.Item>
-                    <List.Item as='a'href='Newsletters'>News Letters</List.Item>
-                    <List.Item as='a' href='Photos'>Photos</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Informations' />
-                  <List link inverted>
-                    <List.Item as='a' href='Programm'>Program</List.Item>
-                    <List.Item as='a' href='#'>Map</List.Item>
-                    <List.Item as='a' href='#'>Contact</List.Item>
-                    <List.Item as='a' href='Mission'>About</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Addresses' />
-                  <List link inverted>
-                    <List.Item as='a' href='#'>facebook address</List.Item>
-                    <List.Item as='a' href='#'>Instegram address</List.Item>
-                    <List.Item as='a' href='#'>Twitter address</List.Item>
-                    <List.Item as='a' href='#'>Email address</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Our goal is' />
-                  <p>
-                  We seek to contribute to the integral development of children and<br/> their families in our environment.
-                  </p>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
-            <Divider inverted section />
-            <Image src='/logo.png' centered size='mini' />
-            <List horizontal inverted divided link size='small'>
-              <List.Item as='a' href='#'>
-                Site Map
-              </List.Item>
-              <List.Item as='a' href='#'>
-                Contact Us
-              </List.Item>
-              <List.Item as='a' href='#'>
-                Terms and Conditions
-              </List.Item>
-              <List.Item as='a' href='#'>
-                Privacy Policy
-              </List.Item>
-            </List>
-          </Container>
-        </Segment>
+            <Footer/>
       </div>
     )
   }
