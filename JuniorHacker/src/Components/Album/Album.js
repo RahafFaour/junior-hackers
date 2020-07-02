@@ -1,5 +1,5 @@
 import React from 'react'
-import Navication from "../Common/Navication/Navication"
+import Navigation from "../Common/Navigation/Navigation"
 import Carousel from 'react-elastic-carousel';
 import Item from "./Item";
 import "./styles.css";
@@ -24,7 +24,7 @@ function Album() {
   return (
 
     <div className='style'>
-      <Navication />
+      <Navigation />
         <div class="ui segment">
          <p>Album 2016</p>
         </div>
