@@ -15,31 +15,31 @@ class AboutUs extends Component {
         <Header as='h2' attached='top' style={{ fontFamily: 'Arial Black', fontSize: '16px' }}>
           Our Story
             <Segment attached style={{ fontFamily: 'Times New Roman', fontSize: '14px' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
-    </Segment>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.
+            </Segment>
         </Header>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <div>
-        <div>
-        <div class="container">
-        <img src={personal} alt="Avatar" class="image"/>
-         <div class="overlay">My Name is John<br/>Volunteer</div>
+          <div>
+            <div className="container">
+              <img src={personal} alt="Avatar" className="image"/>
+                <div className="overlay">My Name is John<br/>Volunteer</div>
             </div>
             
-        </div>
-        <div>
-        <div class="container" id="float">
-        <img src={personal} alt="Avatar" class="image"/>
-         <div class="overlay">My Name is John<br/>Volunteer</div>
+          </div>
+          <div>
+            <div className="container" >
+              <img src={personal} alt="Avatar" className="image"/>
+                <div className="overlay">My Name is John<br/>Volunteer</div>
             </div>
-            
-        </div>
+              
+          </div>
         </div>
       </div>
     )

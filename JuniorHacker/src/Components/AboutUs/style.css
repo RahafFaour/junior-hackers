@@ -9,7 +9,7 @@
   
   .image {
     border-radius: 50%;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
   }
   
@@ -34,7 +34,6 @@
     
   }
   #float{
-      float:right;
       display: inline;
   }
   
