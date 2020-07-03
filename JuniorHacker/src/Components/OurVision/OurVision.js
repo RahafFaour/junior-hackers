@@ -1,206 +1,206 @@
-// import 'semantic-ui-css/semantic.min.css'
-// import Navigation from "../Common/Navigation/Navigation"
-// import _ from 'lodash'
-// import React, { Component } from 'react'
-// import Footer from "../Common/Footer/Footer"
+import 'semantic-ui-css/semantic.min.css'
+import Navigation from "../Common/Navigation/Navigation"
+import _ from 'lodash'
+import React, { Component } from 'react'
+import Footer from "../Common/Footer/Footer"
 
-// import {
-//   Container,
-//   //Dropdown,
+import {
+  Container,
+  //Dropdown,
 
-//   Icon,
-//   Image,
-//   Menu,
-//   Visibility,
-// } from 'semantic-ui-react'
+  Icon,
+  Image,
+  Menu,
+  Visibility,
+} from 'semantic-ui-react'
 
-// const menuStyle = {
-//   border: 'none',
-//   borderRadius: 0,
-//   boxShadow: 'none',
-//   marginBottom: '1em',
-//   marginTop: '0em',
-//   transition: 'box-shadow 0.5s ease, padding 0.5s ease',
-// }
+const menuStyle = {
+  border: 'none',
+  borderRadius: 0,
+  boxShadow: 'none',
+  marginBottom: '1em',
+  marginTop: '0em',
+  transition: 'box-shadow 0.5s ease, padding 0.5s ease',
+}
 
-// const fixedMenuStyle = {
-//   backgroundColor: '#525252',
-//   border: '1px solid #525252',
-//   boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
-// }
+const fixedMenuStyle = {
+  backgroundColor: '#525252',
+  border: '1px solid #525252',
+  boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+}
 
-// const overlayStyle = {
-//   float: 'left',
-//   margin: '3em 3em 1em 0em',
-// }
+const overlayStyle = {
+  float: 'left',
+  margin: '3em 3em 1em 0em',
+}
 
-// const fixedOverlayStyle = {
-//   ...overlayStyle,
-//   position: 'fixed',
-//   top: '40px',
-//   zIndex: 10,
-// }
+const fixedOverlayStyle = {
+  ...overlayStyle,
+  position: 'fixed',
+  top: '40px',
+  zIndex: 10,
+}
 
-// const overlayMenuStyle = {
-//   position: 'relative',
-//   left: 0,
-//   transition: 'left 0.5s ease',
-// }
+const overlayMenuStyle = {
+  position: 'relative',
+  left: 0,
+  transition: 'left 0.5s ease',
+}
 
-// const fixedOverlayMenuStyle = {
-//   ...overlayMenuStyle,
-//   left: '800px',
-// }
+const fixedOverlayMenuStyle = {
+  ...overlayMenuStyle,
+  left: '800px',
+}
 
-// const RightImage = () => (
-//   <Image
-//     floated='right'
-//     size='medium'
-//     src='/Team_Pavel.jpg'
-//     style={{ margin: '6em -4em 2em 2em' }}
-//   />
-// )
+const RightImage = () => (
+  <Image
+    floated='right'
+    size='medium'
+    src='/Team_Pavel.jpg'
+    style={{ margin: '6em -4em 2em 2em' }}
+  />
+)
 
-// const Paragraph1 = () => (
-//   <p>
-//     {[
-//       'Create opportunities for children to develop their skills and talents to become healthy, independent adults who care about society.  ',
-//       'Pachachaca is an organization that provides care for orphaned children and children in situations of social',
-//       'of social risk who cannot live at home due to neglect, domestic violence and abuse. In addition, Pachachaca ',
-//       'aims to be an active organization within the community by opening its doors and organizing different  ',
-//       'activities, both for children and families. Finally, Pachachaca strives as much as possible to be self-sustainable by  ',
-//       'developing small-scale food projects and the (re) use of water and energy, as well as the adequate treatment of solid waste. ',
-//       'Pachachaca is a place where children receive attention and care. One of our purposes is to stimulate their potential by ',
+const Paragraph1 = () => (
+  <p>
+    {[
+      'Create opportunities for children to develop their skills and talents to become healthy, independent adults who care about society.  ',
+      'Pachachaca is an organization that provides care for orphaned children and children in situations of social',
+      'of social risk who cannot live at home due to neglect, domestic violence and abuse. In addition, Pachachaca ',
+      'aims to be an active organization within the community by opening its doors and organizing different  ',
+      'activities, both for children and families. Finally, Pachachaca strives as much as possible to be self-sustainable by  ',
+      'developing small-scale food projects and the (re) use of water and energy, as well as the adequate treatment of solid waste. ',
+      'Pachachaca is a place where children receive attention and care. One of our purposes is to stimulate their potential by ',
       
-//     ].join('')}
-//   </p>
-// )
+    ].join('')}
+  </p>
+)
 
-// const Paragraph3 = () => (
-//   <p>
-//     {[
-//       'We seek to contribute to the integral development of children and their families in our environment.',
-//       'We know that changing the world is a utopian idea, but at least we want to contribute to making it less negative.',
-//       'accepting differences,active listening, recognizing the skills and qualities of others, positive communication and', 
-//       'interaction, having a social and environmental conscience. All these qualities are stimulated in music, video and', 
-//       'theater workshops which are given by professionals with many years of experience in the field of children homes.',
-//       'developing different skills in areas such as friendship, sharing, participation, patience, and different skills in areas such as',
-//       'friendship, sharing, asking others, taking initiative, following directions, staying focused on tasks.', 
-//     ].join('')}
-//   </p>
-// )
+const Paragraph3 = () => (
+  <p>
+    {[
+      'We seek to contribute to the integral development of children and their families in our environment.',
+      'We know that changing the world is a utopian idea, but at least we want to contribute to making it less negative.',
+      'accepting differences,active listening, recognizing the skills and qualities of others, positive communication and', 
+      'interaction, having a social and environmental conscience. All these qualities are stimulated in music, video and', 
+      'theater workshops which are given by professionals with many years of experience in the field of children homes.',
+      'developing different skills in areas such as friendship, sharing, participation, patience, and different skills in areas such as',
+      'friendship, sharing, asking others, taking initiative, following directions, staying focused on tasks.', 
+    ].join('')}
+  </p>
+)
 
-// export default class OurVision extends Component {
+export default class OurVision extends Component {
 
-//   state = {
-//     menuFixed: false,
-//     overlayFixed: false,
-//     background: '#fff',
-//   }
+  state = {
+    menuFixed: false,
+    overlayFixed: false,
+    background: '#fff',
+  }
 
-//   handleOverlayRef = (c) => {
-//     const { overlayRect } = this.state  
+  handleOverlayRef = (c) => {
+    const { overlayRect } = this.state  
 
-//     if (!overlayRect) {
-//       this.setState({ overlayRect: _.pick(c.getBoundingClientRect(), 'height', 'width') })
-//     }
-//   }
+    if (!overlayRect) {
+      this.setState({ overlayRect: _.pick(c.getBoundingClientRect(), 'height', 'width') })
+    }
+  }
 
-//   stickOverlay = () => this.setState({ overlayFixed: false })
+  stickOverlay = () => this.setState({ overlayFixed: false })
 
-//   stickTopMenu = () => this.setState({ menuFixed: false })
+  stickTopMenu = () => this.setState({ menuFixed: false })
 
-//   unStickOverlay = () => this.setState({ overlayFixed: false })
+  unStickOverlay = () => this.setState({ overlayFixed: false })
 
-//   unStickTopMenu = () => this.setState({ menuFixed: false })
+  unStickTopMenu = () => this.setState({ menuFixed: false })
 
-//   render() {
-//     const { menuFixed, overlayFixed, overlayRect } = this.state;
+  render() {
+    const { menuFixed, overlayFixed, overlayRect } = this.state;
   
 
-//     return (
+    return (
 
-//       <div>
+      <div>
 
-//         <Navigation />
+        <Navigation />
         
-//         {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
-//             background color.
-//           */}
-//         <style>
-//           {`
-//           html, body {
-//             background: #c8e6c9;
-//           }
-//         `}
+        {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
+            background color.
+          */}
+        <style>
+          {`
+          html, body {
+            background: #c8e6c9;
+          }
+        `}
       
-//         </style>
+        </style>
         
-//         {/* Attaching the top menu is a simple operation, we only switch `fixed` prop and add another style if it has
-//             gone beyond the scope of visibility
-//           */}
-//         <Visibility
-//           onBottomPassed={this.stickTopMenu}
-//           onBottomVisible={this.unStickTopMenu}
-//           once={false}
-//         >
-//           <Menu
-//             borderless
-//             fixed={menuFixed ? 'top' : undefined}
-//             style={menuFixed ? fixedMenuStyle : menuStyle}
-//           >
+        {/* Attaching the top menu is a simple operation, we only switch `fixed` prop and add another style if it has
+            gone beyond the scope of visibility
+          */}
+        <Visibility
+          onBottomPassed={this.stickTopMenu}
+          onBottomVisible={this.unStickTopMenu}
+          once={false}
+        >
+          <Menu
+            borderless
+            fixed={menuFixed ? 'top' : undefined}
+            style={menuFixed ? fixedMenuStyle : menuStyle}
+          >
           
-//           </Menu>
-//         </Visibility>
-//        <br/><br/>
-//         <Container text>
-//         <Menu.Item header><b>Mission</b><hr/></Menu.Item>
-//           {_.times(1, (i) => (
-//             <Paragraph1 key={i} />
-//           ))}
+          </Menu>
+        </Visibility>
+       <br/><br/>
+        <Container text>
+        <Menu.Item header><b>Mission</b><hr/></Menu.Item>
+          {_.times(1, (i) => (
+            <Paragraph1 key={i} />
+          ))}
 
-//           {/* Example with overlay menu is more complex, SUI simply clones all elements inside, but we should use a
-//               different approach.
-//               An empty Visibility element controls the need to change the fixing of element below, it also uses height
-//               and width params received from its ref for correct display.
-//             */}
-//           <Visibility
-//             offset={80}
-//             once={false}
-//             onTopPassed={this.stickOverlay}
-//             onTopVisible={this.unStickOverlay}
-//             style={overlayFixed ? { ...overlayStyle, ...overlayRect } : {}}
-//           />
+          {/* Example with overlay menu is more complex, SUI simply clones all elements inside, but we should use a
+              different approach.
+              An empty Visibility element controls the need to change the fixing of element below, it also uses height
+              and width params received from its ref for correct display.
+            */}
+          <Visibility
+            offset={80}
+            once={false}
+            onTopPassed={this.stickOverlay}
+            onTopVisible={this.unStickOverlay}
+            style={overlayFixed ? { ...overlayStyle, ...overlayRect } : {}}
+          />
             
-//           <div ref={this.handleOverlayRef} style={overlayFixed ? fixedOverlayStyle : overlayStyle}>
-//             <Menu
-//               icon='labeled'
-//               style={overlayFixed ? fixedOverlayMenuStyle : overlayMenuStyle}
-//               vertical
-//             >
-//               <Menu.Item href='https://twitter.com/i/flow/signup'>
-//                 <Icon name='twitter' />
-//                 Twitter 
-//               </Menu.Item>
+          <div ref={this.handleOverlayRef} style={overlayFixed ? fixedOverlayStyle : overlayStyle}>
+            <Menu
+              icon='labeled'
+              style={overlayFixed ? fixedOverlayMenuStyle : overlayMenuStyle}
+              vertical
+            >
+              <Menu.Item href='https://twitter.com/i/flow/signup'>
+                <Icon name='twitter' />
+                Twitter 
+              </Menu.Item>
 
-//               <Menu.Item href='https://www.facebook.com'>
-//                 <Icon name='facebook' />
-//                 Facebook
-//               </Menu.Item>
+              <Menu.Item href='https://www.facebook.com'>
+                <Icon name='facebook' />
+                Facebook
+              </Menu.Item>
 
-//               <Menu.Item href='https://www.instagram.com/'>
-//                 <Icon name='mail' />
-//                 Instegram
-//               </Menu.Item>
-//             </Menu>
-//           </div>
+              <Menu.Item href='https://www.instagram.com/'>
+                <Icon name='mail' />
+                Instegram
+              </Menu.Item>
+            </Menu>
+          </div>
           
-//           {/* <LeftImage /> */}
+          {/* <LeftImage /> */}
           
-//       <h6 ><b>Vision<hr/></b></h6>
-//           <Paragraph3 />
+      <h6 ><b>Vision<hr/></b></h6>
+          <Paragraph3 />
          
-//           <RightImage />
+          <RightImage />
            
             <h6><b>Over de regio<hr/></b></h6>
             <p>

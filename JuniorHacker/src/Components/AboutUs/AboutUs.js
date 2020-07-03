@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Header, Segment} from 'semantic-ui-react'
 import Navigation from "../Common/Navigation/Navigation"
-import './style.css'
 import Personeel from './Personeel'
 
 

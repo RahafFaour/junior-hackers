@@ -2,7 +2,6 @@
 import React from 'react'
 import Navigation from "../Common/Navigation/Navigation"
 import './NewsLetter.css'
-import Footer from "../Common/Footer/Footer"
 
 const NewsLetter = props => {
     return (

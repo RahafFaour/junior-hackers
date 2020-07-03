@@ -8,6 +8,7 @@ import album2 from "../../Images/album2.jpg"
 import album3 from "../../Images/album3.jpg"
 import album4 from "../../Images/album4.jpg"
 import album5 from "../../Images/album5.jpg"
+import Footer from "../Common/Footer/Footer"
 
 
 
@@ -24,19 +25,15 @@ function Album() {
 
     <div className='style'>
       <Navigation />
-        <div class="ui segment">
-         <p>Album 2016</p>
-        </div>
         <Carousel className="Album" breakPoints={breakPoints}>
-         <Item><img src={album1} alt="{image}" className='image'/></Item>
+        <Item><img src={album1} alt="{image}" className='image'/></Item>
         <Item><img src={album2} alt="{image}" className='image'/></Item>
         <Item><img src={album3} alt="{image}" className='image'/></Item>
         <Item><img src={album4} alt="{image}" className='image'/></Item>
         <Item><img src={album5} alt="{image}" className='image'/></Item>
       </Carousel>
+      <div style={{position:'relative',top:0}}><Footer/></div>
       
-        
-     
     </div>
   )
 }
