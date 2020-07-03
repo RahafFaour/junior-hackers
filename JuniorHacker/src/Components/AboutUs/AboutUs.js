@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Header, Segment} from 'semantic-ui-react'
-import Navication from "../Common/Navication/Navication"
-import personal from './personal.jpg'
-import './style.css'
+import Navigation from "../Common/Navigation/Navigation"
+import Personeel from './Personeel'
+
 
 class AboutUs extends Component {
 
@@ -11,7 +11,8 @@ class AboutUs extends Component {
   render() {
     return (
       <div  style={{ backgroundImage: `url(/images/cloud1.jpg)`, height: '270px', backgroundSize: 'cover', padding: '50px', backgroundRepeat: 'no-repeat'}}>
-        <Navication/>
+        
+        <Navigation/>
         <Header as='h2' attached='top' style={{ fontFamily: 'Arial Black', fontSize: '16px' }}>
           Our Story
             <Segment attached style={{ fontFamily: 'Times New Roman', fontSize: '14px' }}>
@@ -25,22 +26,7 @@ class AboutUs extends Component {
     </Segment>
         </Header>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <div>
-        <div>
-        <div class="container">
-        <img src={personal} alt="Avatar" class="image"/>
-         <div class="overlay">My Name is John<br/>Volunteer</div>
-            </div>
-            
-        </div>
-        <div>
-        <div class="container" id="float">
-        <img src={personal} alt="Avatar" class="image"/>
-         <div class="overlay">My Name is John<br/>Volunteer</div>
-            </div>
-            
-        </div>
-        </div>
+        <Personeel />
       </div>
     )
   }
