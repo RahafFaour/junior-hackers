@@ -1,45 +1,49 @@
 import React from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import {Media} from 'react-bootstrap'
 import person from './person.jpg'
-import styles from './styles.css'
+
 
 const Personeel = () => (
+ 
+     <div>
+       <Media>
+         <img
+    width={64}
+    height={64}
+    className="mr-3"
+    src={person}
+    alt="Generic placeholder" />
+         <Media.Body>
+    <h5>Top Manager</h5>
+    <p>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque<br/>
+      ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+     </p>
+        </Media.Body>
+      </Media>
 
-       <div>
-        {/* <div>
-        <div class="container">
-        <img src={person} alt="Avatar" class="image"/>
-         <div class="overlay">My Name is John<br/>Volunteer</div>
-            </div>
-            
-        </div>
-        <div>
-        <div class="container" id="float">
-        <img src={person} alt="Avatar" class="image"/>
-         <div class="overlay">My Name is John<br/>Volunteer</div>
-            </div>
-            
-        </div> */}
-        <Grid divided='vertically'>
-          <Grid.Row columns={2} className='pink'>
-            <Grid.Column width={3}>
-            <Image src={person} className='profile-avatar'/>
-            </Grid.Column>
-            <Grid.Column className=''>
-              <div>My name is John<br/>I am Volunteer</div>
-            </Grid.Column>
-          </Grid.Row>
+      <Media>
+         <img
+    width={64}
+    height={64}
+    className="mr-3"
+    src={person}
+    alt="Generic placeholder" />
+         <Media.Body>
+    <h5>Top Manager</h5>
+    <p>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque<br/>
+      ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+     </p>
+        </Media.Body>
+      </Media>
+      
+      </div>
 
-          <Grid.Row columns={2}>
-          <Grid.Column width={13}>
-              <div>My name is John<br/>I am Volunteer</div>
-            </Grid.Column>
-            <Grid.Column width={3}>
-            <Image src={person} className='profile-avatar'/>
-            </Grid.Column>
-          </Grid.Row>
-  </Grid>
-        </div>
+      
+
+         
+        
 )
 
 export default Personeel;
