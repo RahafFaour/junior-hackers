@@ -1,20 +1,43 @@
-.header-color {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+.navbar {
+  background: #1f4037;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
-.header-color .linkto:hover{
-  background: #ADA996;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.navbar .link{
+color: white;
+}
+.linkText{
+  color: white;
+}
+#basic-nav-dropdown{
+  color: white;
+  font-size: 15px;
   
-  text-decoration: none;
-  color:black;
-  }
-
-#fixedheader{
-  position: fixed;
 }
+.text-white{
+  font-size: 15px;
+  padding: auto;
+}
+.navbar .dropdown-menu {
+  background-color: #1D976C;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  background-color: #85E6FF;
+  background-image: none;
+}
+#basic-nav-dropdown:hover, #programitem:hover, 
+#home:hover, #aboutus:hover,
+#ourvision:hover, #album:hover,
+#newsletter:hover, #donate:hover, #contactus:hover
+{
+  background-color: lightgreen;
+}
+#programitem.active{
+  color: #fff;
+  background-color: lightgreen;
+}
+
 #pachalogo{
   width:50px; 
   /* mix-blend-mode: multiply; */
@@ -24,92 +47,6 @@
 width:50px; 
 height: 50%;
 }
-
-.navbar {
-  overflow: hidden;
-  background-color: #333; 
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-.subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  
-  
-}
-.subnavbtn:hover{
-  color: black;
-}
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background: #ADA996;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-}
-
-.subnav-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background: transparent;
-  width: 100%;
-  z-index: 1;
-}
-
-.subnav-content a {
-  margin: auto;
-  width: 10%;
-  text-align: center;
-  float: right;
-  border: 3px solid none;
-  padding: 10px;
-  color: white;
-  font-size:20px;
-  text-decoration: none;
-  margin-right: 50%;
-  background: #3E5151;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
-
-.subnav-content a:hover {
-  background: #ADA996;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: black;
-  text-decoration: none;
-
-}
-.subnav:hover .subnav-content {
-  display: block;
-
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-.ui.image{
-  width: 50%;
-}
-
 #contact {
   background: #524646;
   height: 100%;

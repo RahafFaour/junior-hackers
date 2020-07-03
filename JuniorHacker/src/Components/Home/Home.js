@@ -43,19 +43,19 @@ class Home extends Component {
     return (
       <div>
         <Navigation />
-        <Slider autoplay={2000} className="slider-wrapper">
+        <Slider autoplay={2000} className="slider-wrapper" >
           {content.map((item, index) => (
-            <div
+            <div style={{height: 5000,}}
               key={index}
               className="slider-content"
-              style={{ background: `url('${item.image}') no-repeat center center`}}>
+              style={{ background: `url('${item.image}') no-repeat center center`, marginTop:63}}>
               <div className="inner">
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
               </div>
             </div>
           ))}
-        </Slider>
+        </Slider><br/>
         <Footer/>
       </div>
     );
