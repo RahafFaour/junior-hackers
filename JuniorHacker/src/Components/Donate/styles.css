@@ -1,6 +1,15 @@
 .Donate {
     font-family: sans-serif;
     text-align: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    padding: 100px;
+    border: 1px solid;
+    height: 80%;
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 50px;
   }
   
   .items {
@@ -16,5 +25,36 @@
   .items__button {
     display: block;
     margin: 0 auto;
-  }
-  
+  } 
+
+ .Donate button {
+   margin-top: 50px;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 10px;
+   background-color: green;
+ }
+
+ .Donate h1 {
+   margin-top: 30px;
+   font-style: italic;
+   font-size: 40px;
+   font-weight: bolder;
+   color: rgb(29, 27, 27);
+ }
+
+ h1:hover {
+  background-color: grey;
+}
+
+.Donate h2 {
+  margin-top: 20px;
+  font-style: oblique;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+ }
+
+h2:hover {
+  background-color: grey;
+}
