@@ -1,92 +1,114 @@
-import React, { Component } from 'react';
+import React from 'react'
 import Navigation from "../Common/Navigation/Navigation"
 import Footer from "../Common/Footer/Footer"
 
-class Newsletters extends Component {
-  render() {
+class ContactUs extends React.Component {
 
-    if(this.props.data){
-      // var name = this.props.data.name;
-      // var street = this.props.data.address.street;
-      // var city = this.props.data.address.city;
-      // var state = this.props.data.address.state;
-      // var zip = this.props.data.address.zip;
-      // var phone= this.props.data.phone;
-      // var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
-    }
+   constructor(props) {
+      super(props);
+      this.state = {
+         name: '',
+         subject: '',
+         email: '',
+         message: '',
+         error: '',
+         thankyou: false
+      };
 
-    return (
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
+      this.handleBlur = this.handleBlur.bind(this);
+   }
 
-   <div>
-      <Navigation/>
-      <section id="contact">
+   isValidEmail(email) {
+      return /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email);
+   }
 
-         <div className="row section-head">
+   isValidMobile(mobileno) {
+      return /^[6-9]\d{9}$/.test(mobileno);
+   }
 
-            <div className="two columns header-col">
+   validateField(field, value) {
+      if (value.length <= 0) {
+         return <div className="alert alert-danger"><span className="text-capitalize">{field}</span> is required field.</div>;
+      } else {
+         if (field == 'email') {
+            if (!this.isValidEmail(value))
+               return <div className="alert alert-danger">Invalid Email.</div>;
+         } else {
+            return '';
+         }
+      }
+   }
 
-               <h1><span>Get In Touch.</span></h1>
+   handleBlur(event) {
+      this.setState({ error: this.validateField(event.target.name, event.target.value) });
+   }
 
+   handleChange(event) {
+      this.setState({
+         [event.target.name]: event.target.value
+      });
+   }
+
+   handleSubmit(event) {
+
+      this.setState({
+         thankyou: true
+      });
+
+      event.preventDefault();
+
+   }
+
+   render() {
+      if (!this.state.thankyou) {
+         return (
+            <React.Fragment>
+               <Navigation />
+               <h1>Get In Toch</h1>
+               <div className="card box_shw2 border-0 px-3 rounded-2 mb-3 w_500 py-4 mx-auto mt-5" id="contactcard">
+                  <div className="card-header bg-white f_10_22 border-0 text-center" >{this.props.title}</div>
+                  <div className="card-body">
+                     {this.state.error}
+
+                     <form onSubmit={this.handleSubmit} encType="multipart/form-data" autoComplete="off">
+                        <div className="position-relative form-group">
+                           <input name="name" type="text" className="text-field form-control mb-3 bg_grey border-0 py-3" placeholder="Name" value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} required="required" />
+                        </div>
+                        <div className="position-relative form-group">
+                           <input name="email" type="email" className="text-field form-control mb-3 bg_grey border-0 py-1" placeholder="Email" value={this.state.email} onChange={this.handleChange} onBlur={this.handleBlur} required="required" />
+                        </div>
+                        <div className="position-relative form-group">
+                           <input name="subject" type="text" className="text-field form-control mb-3 bg_grey border-0 py-1" placeholder="Subject" value={this.state.subject} onChange={this.handleChange} onBlur={this.handleBlur} required="required" />
+                        </div>
+
+                        <div className="position-relative form-group">
+                           <textarea name="message" type="text" className="text-field form-control mb-3 bg_grey border-0 py-1" placeholder="Message" value={this.state.message} onChange={this.handleChange} onBlur={this.handleBlur} required="required" />
+                        </div>
+                        <p className="text-center mb-0"><input type="submit" className="btn btn-success px-5 text-uppercase py-3 f_12_14 border-0 d-inline-block" value="Submit Now" /></p>
+                     </form>
+                  </div>
+               </div>
+               <Footer />
+            </React.Fragment>
+         );
+      }
+
+      if (this.state.thankyou) {
+         return (
+            <div className="thankyou_details">
+               <p>Thank for your message. We will contact you soon.</p>
+               <ul className="list-group">
+                  <li className="list-group-item">Name: {this.state.name}</li>
+                  <li className="list-group-item">subject: {this.state.subject}</li>
+                  <li className="list-group-item">Email: {this.state.email}</li>
+                  <li className="list-group-item">Message: {this.state.message}</li>
+               </ul>
             </div>
-
-            <div className="ten columns">
-
-                  <p className="lead">{message}</p>
-
-            </div>
-
-         </div>
-
-         <div className="row">
-            <div className="eight columns">
-            
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35"  id="contactName" name="contactName" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
-                  </div>
-					</fieldset>
-               
-				   </form>
-
-           <div id="message-warning"> Please try again!</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
-           </div>
-      </div>
-      </section>
-
-<Footer/>
-   </div>
-
-    );
-  }
+         )
+      }
+   }
 }
 
-export default Newsletters;
+export default ContactUs;

@@ -47,7 +47,7 @@ color: white;
 width:50px; 
 height: 50%;
 }
-#contact {
+/* #contact {
   background: #524646;
   height: 100%;
   position: relative;
@@ -108,7 +108,7 @@ width: 100%;
   outline: none;
   font-size: 15px;
   line-height: 24px;
-  width: 70%;
+  width: 40%;
 }
 
 #contact input:focus,
@@ -162,4 +162,30 @@ width: 100%;
   position: relative;
   left: 18px;
   top: 17px;
+} */
+.box_shw2 {
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0 25px;
+}
+
+.f_12_14 {
+  font-size: 12px;
+  line-height: 14px !important;
+}
+
+.f_20_22 {
+  font-size: 20px;
+  line-height: 22px !important;
+}
+
+.bg_grey {
+  background-color: #f1f1f1 !important;
+}
+
+.w_500 {
+  width: 500px;
+  max-width: 100%;
+}
+#contactcard{
+  top:25px;
+  width: 50%;
 }

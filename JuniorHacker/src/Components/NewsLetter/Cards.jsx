@@ -7,8 +7,8 @@ import Footer from "../Common/Footer/Footer"
 export class Cards extends Component {
     render() {
         return (
-            <div>
-                <div className="container-fluid d-flex justify-content-center">
+            <React.Fragment>
+                <div  className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
                             <NewsLitter imgsrc={newsimage1} title="Newsletter 1"/>
@@ -33,11 +33,10 @@ export class Cards extends Component {
 
 
                     </div>
-
                 </div>
-                <br/> <br/> <br/> <br/>
-                <Footer/>
-            </div>
+                <div style={{position:'relative',top:250}}><Footer/></div>
+
+            </React.Fragment>
         )
     }
 }

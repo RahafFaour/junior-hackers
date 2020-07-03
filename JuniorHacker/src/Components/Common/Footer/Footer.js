@@ -41,7 +41,7 @@ export class Footer extends Component {
 
 			<div className="footer-right">
 
-				<p style={{color:'white'}}className="footer-company-about">
+				<p style={{color:'white',marginTop:18}}className="footer-company-about">
 					<span >About the company</span>
 					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
 				</p>
@@ -50,8 +50,8 @@ export class Footer extends Component {
 
 					<a href="#"><i className="fa fa-facebook"></i></a>
 					<a href="#"><i className="fa fa-twitter"></i></a>
-					<a href="#"><i className="fa fa-linkedin"></i></a>
-					<a href="#"><i className="fa fa-github"></i></a>
+					{/* <a href="#"><i className="fa fa-linkedin"></i></a> */}
+					<a href="#"><i className="fa fa-instagram"></i></a>
 
 				</div>
 
