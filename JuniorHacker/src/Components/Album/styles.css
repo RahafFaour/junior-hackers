@@ -1,6 +1,5 @@
 .Album {
     font-family: sans-serif;
-    display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -10,14 +9,17 @@
 
   .style{
     background-color: #616161;
-    position: relative;
+    
   }
   .ui.segment{
     color: white;
     text-align: center;
-    border-color: thistle;
     
-
   }
 
+  .image{
+      width: 80%;
+      height:70%;
+   
+  }
  
