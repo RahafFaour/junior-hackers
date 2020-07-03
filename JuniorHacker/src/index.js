@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import 'react-bnb-gallery'
+//import 'react-bnb-gallery'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 

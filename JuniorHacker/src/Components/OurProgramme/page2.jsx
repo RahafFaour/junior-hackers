@@ -1,19 +1,23 @@
-import React, { Component } from 'react'
-import Navigation from '../Common/Navigation/Navigation'
-import Footer from "../Common/Footer/Footer"
-
+import React, { Component } from "react";
+import "./program.css";
+import Navigation from "../Common/Navigation/Navigation";
+import Footer from "../Common/Footer/Footer";
+import {  } from "semantic-ui-react";
 
 class page2 extends Component {
   render() {
     return (
       <div>
-        <Navigation/>
-        
+        <Navigation />
+        <div className="content-page2">
 
-        <Footer/>
+
+        
+        </div>
+        <Footer />
       </div>
-    )
+    );
   }
 }
 
-export default page2
+export default page2;

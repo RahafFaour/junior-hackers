@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './program.css'
 import Navigation from '../Common/Navigation/Navigation'
 import Footer from "../Common/Footer/Footer"
 
@@ -8,8 +9,13 @@ class page3 extends Component {
     return (
       <div>
         <Navigation/>
+        <div className="content-page3">
         
 
+
+        
+        
+        </div>
         <Footer/>
       </div>
     )
