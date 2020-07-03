@@ -66,8 +66,10 @@ class ContactUs extends React.Component {
          return (
             <React.Fragment>
                <Navigation />
-               <h1>Get In Toch</h1>
+               <div>Get In Toch</div>
                <div className="card box_shw2 border-0 px-3 rounded-2 mb-3 w_500 py-4 mx-auto mt-5" id="contactcard">
+               <h1 style={{textAlign:'center'}}>Get In Toch</h1>
+
                   <div className="card-header bg-white f_10_22 border-0 text-center" >{this.props.title}</div>
                   <div className="card-body">
                      {this.state.error}
