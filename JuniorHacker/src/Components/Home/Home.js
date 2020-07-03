@@ -48,7 +48,7 @@ class Home extends Component {
             <div style={{height: 5000,}}
               key={index}
               className="slider-content"
-              style={{ background: `url('${item.image}') no-repeat center center`, marginTop:63}}>
+              style={{ background: `url('${item.image}') no-repeat center center`, marginTop:"4%"}}>
               <div className="inner">
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
