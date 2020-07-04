@@ -73,6 +73,7 @@ async function buyItem(item) {
 
 function Donate() {
   const [items] = useState(storeItems);
+  
   return (
     <div className="Donate">
       <h1>Rondo The Hairdresser's store</h1>
