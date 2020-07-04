@@ -3,15 +3,17 @@ import logo from "../../../Images/pachalogo2.png"
 import yoreemlogo from "../../../Images/yorfooter.png"
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react'
+import { useHistory } from "react-router-dom";
 
 import { withRouter } from 'react-router-dom';
 
 function Navigation() {
   const [shouldOpen, show] = useState(false);
-//   const handleClick =(e)=>{
-//   alert('---');
-//   console.log(e.target.name)
-// }
+  const history = useHistory();
+
+  function handleClick() {
+    history.push("/ourprogramme");
+  }
   return (
   
     <div>
@@ -23,10 +25,10 @@ function Navigation() {
             <Navbar.Brand ><img src={yoreemlogo} style={{width:40}} /></Navbar.Brand>
             <Navbar.Brand>  <img src={logo} style={{width:100}} /></Navbar.Brand>
             <Nav className="ml-auto" >
-              <Nav.Link className="text-white" id="home" as={Link} to="/" href="/">Home</Nav.Link>
-              <NavDropdown eventKey={2} title="Programmes" id="basic-nav-dropdown"
+              <Nav.Link className="text-white" id="home" as={Link} to="/" >Home</Nav.Link>
+              <NavDropdown  title="Programmes" id="basic-nav-dropdown"
               onMouseEnter = { () => show(true) } onMouseLeave = { () => show(false) }
-              show={ shouldOpen } > 
+              show={ shouldOpen } onClick={handleClick}> 
                 {/* onClick={handleClick} name="prog" */}
                 <NavDropdown.Item  id="programitem" className="text-white"  href="#action/3.1">Programe 1</NavDropdown.Item>
                 <NavDropdown.Item  id="programitem" className="text-white" href="#action/3.2">Programe 2</NavDropdown.Item>
