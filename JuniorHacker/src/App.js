@@ -9,7 +9,7 @@ import Album from './Components/Album/Album'
 import ContactUs from './Components/ContactUs/ContactUs'
 import Donate from './Components/Donate/Donate'
 import NewsLetter from './Components/NewsLetter/Cards'
-
+import 'semantic-ui-css/semantic.min.css'
 class App extends Component {
     render() {
 

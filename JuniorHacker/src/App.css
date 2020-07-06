@@ -1,4 +1,29 @@
 
+html, body {
+  background: #c8e6c9;
+}
+
+.header-color {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+.header-color .linkto:hover{
+  background: #ADA996;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  text-decoration: none;
+  color:black;
+  }
+
+#fixedheader{
+  position: fixed;
+}
+#pachalogo{
+  width:50px; 
+  /* mix-blend-mode: multiply; */
+}
 .box_shw2 {
   box-shadow: rgba(0, 0, 0, 0.12) 0 0 25px;
 }
