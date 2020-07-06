@@ -30,7 +30,7 @@ function Navigation() {
               onMouseEnter = { () => show(true) } onMouseLeave = { () => show(false) }
               show={ shouldOpen } onClick={handleClick}> 
                 {/* onClick={handleClick} name="prog" */}
-                <NavDropdown.Item  id="programitem" className="text-white"  href="#action/3.1">Programe 1</NavDropdown.Item>
+                <NavDropdown.Item  id="programitem" className="text-white"  href="/3.1">Programe 1</NavDropdown.Item>
                 <NavDropdown.Item  id="programitem" className="text-white" href="#action/3.2">Programe 2</NavDropdown.Item>
                 <NavDropdown.Item id="programitem" className="text-white" href="#action/3.3">Programe 3</NavDropdown.Item>
                 <NavDropdown.Divider />
