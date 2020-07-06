@@ -55,7 +55,7 @@ export class OurVision extends Component {
       </div>
 
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
 
     )
