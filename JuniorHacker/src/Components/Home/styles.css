@@ -53,13 +53,15 @@ button:hover {
 .slider-wrapper {
   position: relative;
   height: 70vh;
-  top: 0;
+  top: -60px;
 
 }
 
 .slide {
   background-size: cover !important;
+  width: 60%;
   margin-bottom: auto;
+  margin-left: 21%;
   overflow: hidden;
 }
 
@@ -82,7 +84,8 @@ button:hover {
 		background: url('https://www.nicepng.com/png/full/192-1928952_green-right-arrow-png.png') no-repeat center center / 16px;
 		width: 32px;
     height: 32px;
-    margin: 30px;
+    margin-right: 14%;
+    margin-left: 15%;
 		text-indent: -9999px;
 		cursor: pointer;
 }
@@ -130,7 +133,8 @@ transform: translate(-50%, -50%);
 }
 
 .slider-content .inner h1 {
-  font-weight: 900;
+font-family: Arial, Helvetica, sans-serif;
+  font-weight: 20;
   margin: 0 auto;
   max-width: 840px;
   color: #FFFFFF;

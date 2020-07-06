@@ -3,11 +3,14 @@ import NewsLitter from './NewsLetter'
 import './NewsLetter.css'
 import newsimage1 from '../../Images/newsimage1.jpg'
 import Footer from "../Common/Footer/Footer"
+import Navigation from "../Common/Navigation/Navigation"
 
 export class Cards extends Component {
     render() {
         return (
             <React.Fragment>
+                            <Navigation />
+
                 <div  className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
@@ -34,7 +37,7 @@ export class Cards extends Component {
 
                     </div>
                 </div>
-                <div style={{position:'relative',top:250}}><Footer/></div>
+                {/* <div style={{position:'relative',top:250}}><Footer/></div> */}
 
             </React.Fragment>
         )

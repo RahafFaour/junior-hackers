@@ -75,6 +75,7 @@ function Donate() {
   const [items] = useState(storeItems);
   
   return (
+    <React.Fragment>      <Navigation/>
     <div className="Donate">
       <h1>Rondo The Hairdresser's store</h1>
       <div>
@@ -94,9 +95,11 @@ function Donate() {
           ))}
         </ul>
       </div>
-      <Navigation/>
+      
       {/* <Footer/> */}
     </div>
+    </React.Fragment>
+
   );
 }
 

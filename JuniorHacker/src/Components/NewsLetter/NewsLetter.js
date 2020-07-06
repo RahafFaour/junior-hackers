@@ -1,12 +1,10 @@
 
 import React from 'react'
-import Navigation from "../Common/Navigation/Navigation"
 import './NewsLetter.css'
 
 const NewsLetter = props => {
     return (
         <div>
-            <Navigation />
             <div className="card text-center shadow">
                 <div className="overflow">
                     <img src={props.imgsrc} alt="News image" className="card-img-top" />

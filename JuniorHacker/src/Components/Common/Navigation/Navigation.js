@@ -1,56 +1,96 @@
+import { Container, Row, Col } from 'react-bootstrap';
 import { Navbar, DropdownButton, NavDropdown, MenuItem, Nav, Form, FormControl, Button, } from 'react-bootstrap';
+
 import logo from "../../../Images/pachalogo2.png"
 import yoreemlogo from "../../../Images/yorfooter.png"
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react'
-import { useHistory } from "react-router-dom";
 
-import { withRouter } from 'react-router-dom';
+import './_header.css'
+import React, { Component } from 'react'
 
-function Navigation() {
-  const [shouldOpen, show] = useState(false);
-  const history = useHistory();
+export class Navigation extends Component {
+  state = {
+    navBackground: "",
+    color:"",
+    position:"",
+  };
 
-  function handleClick() {
-    history.push("/ourprogramme");
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const backgroundcolor = window.scrollY < 300 ? "" : "green";
+      this.setState({ navBackground: backgroundcolor });
+      const position = window.scrollY < 300 ? "" : "fixed";
+      this.setState({ position: position });
+ 
+    });
+ 
   }
-  return (
+  render() {
+    const options = [
+      { key: 1, text: 'Choice 1', value: 1 },
+      { key: 2, text: 'Choice 2', value: 2 },
+      { key: 3, text: 'Choice 3', value: 3 },
+    ]
+
+    return (
+
+      <Container flex>
   
-    <div>
-        <div>
-         <div className='App tc f3'>
-        <Navbar className="navbar fixed-top" cl bg='light' expand='lg'>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-            <Navbar.Brand ><img src={yoreemlogo} style={{width:40}} /></Navbar.Brand>
-            <Navbar.Brand>  <img src={logo} style={{width:100}} /></Navbar.Brand>
-            <Nav className="ml-auto" >
-              <Nav.Link className="text-white" id="home" as={Link} to="/" >Home</Nav.Link>
-              <NavDropdown  title="Programmes" id="basic-nav-dropdown"
-              onMouseEnter = { () => show(true) } onMouseLeave = { () => show(false) }
-              show={ shouldOpen } onClick={handleClick}> 
-                {/* onClick={handleClick} name="prog" */}
-                <NavDropdown.Item  id="programitem" className="text-white"  href="/3.1">Programe 1</NavDropdown.Item>
-                <NavDropdown.Item  id="programitem" className="text-white" href="#action/3.2">Programe 2</NavDropdown.Item>
-                <NavDropdown.Item id="programitem" className="text-white" href="#action/3.3">Programe 3</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item id= "programitem" className="text-white" href="#action/3.4">Programe 4</NavDropdown.Item>
-              </NavDropdown>
-
-              <Nav.Link as={Link} to="aboutus" id="aboutus" className="text-white">About Us</Nav.Link>
-              <Nav.Link as={Link} to="ourvision" id="ourvision" className="text-white">Our Vision</Nav.Link>
-              <Nav.Link as={Link} to="album" id="album" className="text-white">Album</Nav.Link>
-              <Nav.Link as={Link} to="newsletter" id="newsletter" className="text-white">Newsletters</Nav.Link>
-              <Nav.Link as={Link} to="contactus" id="contactus" className="text-white">Contact Us</Nav.Link>
-              <Nav.Link as={Link} to="donate" id="donate" className="text-white">Donate</Nav.Link>
-
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
-      </div>
-    </div>
-  )
+        <Row>
+          <Col xs={12} md={8} >
+            <div className="short_contact_list">
+              <ul>
+                <li> <i class="fa fa-phone"></i>+51 84 612495</li>
+                <li><i class="fa fa-envelope"></i>info@pachachaca.org</li>
+              </ul>
+            </div>    </Col>
+  
+          <Col xs={6} md={4}>
+            <div class="social_media_links d-none d-lg-block">
+              <a href="https://www.facebook.com/PachachacaCalca">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/pachachaca.calca/">
+                <i class="fa fa-instagram"></i>
+              </a>
+  
+            </div>
+  
+          </Col>
+        </Row>
+        <br></br>
+        <Row xs={1} md={1}  >
+  
+          <Col >
+            <div className="header" style={{ backgroundColor: 'green', width: '100%', borderRadius: 10, height: 70, position: `${this.state.position}`,right:5,top:0}} >
+     
+              <a href="" className="logo"><img src={yoreemlogo} style={{ width: 35, paddingRight: 10 }} /><img src={logo} style={{ width: 95 }} /></a>
+              <input className="menu-btn" type="checkbox" id="menu-btn" />
+              <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
+              <ul className="menu" >
+                <li><Link to="/" >Home</Link></li>
+                <li><Link to="/aboutus">About Us</Link></li>
+                <li><Link to="/ourprogramme">Programmes</Link></li>
+                <li><Link to="/ourvision">Our Vision</Link></li>
+                <li><Link to="/album">Album</Link></li>
+                <li><Link to="/newsletter">Newsletters</Link></li>
+                <li><Link to="/contactus">Contact</Link></li>
+                <li><Link to="/donate">Donate</Link></li>
+  
+              </ul>
+  
+            </div>
+          </Col>
+  
+        </Row>
+  
+  
+      </Container>
+  
+    )
+  }
 }
 
-export default withRouter(Navigation)
+
+
+export default Navigation
