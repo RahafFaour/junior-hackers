@@ -3,11 +3,14 @@ import {Row, Col, Container, Media} from 'react-bootstrap'
 import Personeel from './Personeel'
 import pachalogo2 from '../../Images/pachalogo2.png'
 import yorfooter from '../../Images/yorfooter.png'
+import Navigation from "../Common/Navigation/Navigation"
 
 
 export default function AboutUs() {
   return (
     <div>
+      <Navigation/>
+      <br></br><br></br>
     <Container>
       <Row>
         <Col>

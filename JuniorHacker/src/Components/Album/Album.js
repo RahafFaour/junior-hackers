@@ -13,6 +13,8 @@ import album6 from "../../Images/album6.jpg"
 function Album() {
   return (
     <div>
+      <Navigation/>
+      <br></br><br></br>
   <Container>
 
   <Row>
@@ -183,4 +185,3 @@ function Album() {
 
 
 export default Album;
- 

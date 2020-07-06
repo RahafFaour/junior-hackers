@@ -2,13 +2,19 @@ import React from 'react'
 import { Header } from 'semantic-ui-react'
 import {Container, Row, Col, Button,Card} from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
+import Navigation from "../Common/Navigation/Navigation"
 
 
 
 const FormExampleFieldControlId = () => (
+   <React.Fragment>
+      <Navigation/>
+      <br></br>
    <div  style={{backgroundImage:`url(/Images/contact.jpg)`, padding:'25px', width: '100%',height: '100%',backgroundSize:'contain, cover', backgroundRepeat: 'no-repeat',opacity:'0.5',backgroundPosition: 'center'
    }}>
+
    <Container>
+      
   <Row>
    <Col></Col>
     <Col>
@@ -58,8 +64,9 @@ const FormExampleFieldControlId = () => (
     <Col></Col>
   </Row>
 </Container>
+
 </div>
-  
+</React.Fragment>
 
 )
 
