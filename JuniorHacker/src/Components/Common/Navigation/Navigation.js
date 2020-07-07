@@ -1,52 +1,96 @@
-import React, { Component } from 'react'
-import { Layout, Header, Navigation, Drawer } from 'react-mdl'
-import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Navbar, DropdownButton, NavDropdown, MenuItem, Nav, Form, FormControl, Button, } from 'react-bootstrap';
+
 import logo from "../../../Images/pachalogo2.png"
 import yoreemlogo from "../../../Images/yorfooter.png"
+import { Link } from 'react-router-dom';
 
- class Navigations extends Component {
-    
-    render() {
-        return (
-             <Layout>
-                {window.screen.width <= 1022 ?
-                    <Drawer >
-                        <Navigation >
-                            <Link to="/" className="linkto">Home</Link>
-                            <Link to="ourprogramme" className="linkto">Oure Programme</Link>
-                            <Link to="aboutus" className="linkto">About Us</Link>
-                            <Link to="ourvision" className="linkto">Our Vision</Link>
-                            <Link to="album" className="linkto">Album</Link>
-                            <Link to="newsletter" className="linkto"><h5>Newsletters </h5></Link>
-                            <Link to="contactus" className="linkto">Contact Us </Link>
-                            <Link to="donate" className="linkto">Donate </Link>
-                        </Navigation>
-                    </Drawer> :
-                    <Header id="fixedheader" className="header-color" title={<div><img id="yoreemlogo" src={yoreemlogo} alt="logo" />  <img id="pachalogo" src={logo} alt="logo"style={{width: 120,height:33,paddingLeft: 10,}}/></div>}  scroll>
-                        <Navigation id="nav">
-                        <Link to="/" className="linkto" style={{fontSize:20}}>Home</Link>
-                        <div className="subnav">
-                            <button className="subnavbtn" style={{fontSize:20}}>Oure Programme <i className="fa fa-caret-down"></i></button>
-                            <div className="subnav-content">
-                            <a href="#company">Page 1</a>
-                            <a href="#company">Page 2</a>
-                            <a href="#team">Page 3</a>
-                            <a href="#careers">Page 4</a>
-                            </div>
-                        </div> 
-                            {/* <Link to="ourprogram" className="linkto">Programm</Link> */}
-                            <Link to="aboutus" className="linkto" style={{fontSize:20}} >About Us </Link>
-                            <Link to="ourvision" className="linkto" style={{fontSize:20}}>Our Vision</Link>
-                            <Link to="album" className="linkto" style={{fontSize:20}}>Album</Link>
-                            <Link to="newsletter" className="linkto" style={{fontSize:20}}>Newsletters</Link>
-                            <Link to="contactus" className="linkto" style={{fontSize:20}}>Contact Us </Link>
-                            <Link to="donate" className="linkto" style={{fontSize:20}}>Donate </Link>
-                        </Navigation>
+import './_header.css'
+import React, { Component } from 'react'
+
+export class Navigation extends Component {
+  state = {
+    navBackground: "",
+    color:"",
+    position:"",
+  };
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const backgroundcolor = window.scrollY < 300 ? "" : "green";
+      this.setState({ navBackground: backgroundcolor });
+      const position = window.scrollY < 300 ? "" : "fixed";
+      this.setState({ position: position });
+ 
+    });
+ 
+  }
+  render() {
+    const options = [
+      { key: 1, text: 'Choice 1', value: 1 },
+      { key: 2, text: 'Choice 2', value: 2 },
+      { key: 3, text: 'Choice 3', value: 3 },
+    ]
+
+    return (
+
+      <Container flex>
   
-                    </Header>}
-            </Layout>    
-        )
-    }
+        <Row>
+          <Col xs={12} md={8} >
+            <div className="short_contact_list">
+              <ul>
+                <li> <i class="fa fa-phone"></i>+51 84 612495</li>
+                <li><i class="fa fa-envelope"></i>info@pachachaca.org</li>
+              </ul>
+            </div>    </Col>
+  
+          <Col xs={6} md={4}>
+            <div class="social_media_links d-none d-lg-block">
+              <a href="https://www.facebook.com/PachachacaCalca">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/pachachaca.calca/">
+                <i class="fa fa-instagram"></i>
+              </a>
+  
+            </div>
+  
+          </Col>
+        </Row>
+        <br></br>
+        <Row xs={1} md={1}  >
+  
+          <Col >
+            <div className="header" style={{ backgroundColor: 'green', width: '100%', borderRadius: 10, height: 70, position: `${this.state.position}`,right:5,top:0}} >
+     
+              <a href="" className="logo"><img src={yoreemlogo} style={{ width: 35, paddingRight: 10 }} /><img src={logo} style={{ width: 95 }} /></a>
+              <input className="menu-btn" type="checkbox" id="menu-btn" />
+              <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
+              <ul className="menu" >
+                <li><Link to="/" >Home</Link></li>
+                <li><Link to="/aboutus">About Us</Link></li>
+                <li><Link to="/ourprogramme">Programmes</Link></li>
+                <li><Link to="/ourvision">Our Vision</Link></li>
+                <li><Link to="/album">Album</Link></li>
+                <li><Link to="/newsletter">Newsletters</Link></li>
+                <li><Link to="/contactus">Contact</Link></li>
+                <li><Link to="/donate">Donate</Link></li>
+  
+              </ul>
+  
+            </div>
+          </Col>
+  
+        </Row>
+  
+  
+      </Container>
+  
+    )
+  }
 }
 
-export default Navigations
+
+
+export default Navigation

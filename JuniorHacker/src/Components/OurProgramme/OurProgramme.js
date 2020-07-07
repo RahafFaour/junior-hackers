@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import Navigation from "../Common/Navigation/Navigation"
+import NewsLitter from '../NewsLetter/NewsLetter'
+import newsimage1 from '../../Images/newsimage1.jpg'
+import Footer from "../Common/Footer/Footer"
 
-export class OurProgramme extends Component {
-  render() {
-    return (
-      <div>
-        <Navigation/>
-      </div>
-    )
-  }
+export class Cards extends Component {
+    render() {
+        return (
+    <div></div>
+        )
+    }
 }
 
-export default OurProgramme
-
+export default Cards

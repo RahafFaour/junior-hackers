@@ -1,3 +1,5 @@
+
+
 .header-color {
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,211 +20,30 @@
 #pachalogo{
   width:50px; 
   /* mix-blend-mode: multiply; */
-
 }
-#yoreemlogo{
-width:50px; 
-height: 50%;
+.box_shw2 {
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0 25px;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333; 
+.f_12_14 {
+  font-size: 12px;
+  line-height: 14px !important;
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.f_20_22 {
+  font-size: 20px;
+  line-height: 22px !important;
 }
 
-.subnav {
-  float: left;
-  overflow: hidden;
+.bg_grey {
+  background-color: #f1f1f1 !important;
 }
 
-.subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  
-  
+.w_500 {
+  width: 500px;
+  max-width: 100%;
 }
-.subnavbtn:hover{
-  color: black;
-}
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background: #ADA996;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-}
-
-.subnav-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background: transparent;
-  width: 100%;
-  z-index: 1;
-}
-
-.subnav-content a {
-  margin: auto;
-  width: 10%;
-  text-align: center;
-  float: right;
-  border: 3px solid none;
-  padding: 10px;
-  color: white;
-  font-size:20px;
-  text-decoration: none;
-  margin-right: 50%;
-  background: #3E5151;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
-
-.subnav-content a:hover {
-  background: #ADA996;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: black;
-  text-decoration: none;
-
-}
-.subnav:hover .subnav-content {
-  display: block;
-
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-.ui.image{
+#contactcard{
+  top:25px;
   width: 50%;
-}
-
-#contact {
-  background: #524646;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  padding-top: 96px;
-  padding-bottom: 102px;
-  justify-content: center;
-  margin-bottom: -500;
-  color: #636363;
-}
-
-.eight.columns{
-width: 100%;
-}
-
-#contact .section-head { margin-bottom: 42px; }
-#contact a, #contact a:visited  { color: #11ABB0; }
-#contact a:hover, #contact a:focus { color: #fff; }
-
-#contact h1 {
-  font: 18px/24px opensea-bold, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #EBEEEE;
-  margin-bottom: 6px;
-}
-
-#contact h1 span { display: none; }
-#contact h1:before {
-  font-family: 'FontAwesome';
-  padding-right: 10px;
-  font-size: 72px;
-  line-height: 72px;
-  text-align: left;
-  float: left;
-  color: #ebeeee;
-}
-
-#contact form { margin-bottom: 30px; }
-#contact label {
-  font: 15px/24px opensea-bold, sans-serif;
-  margin: 12px 0;
-  color: #EBEEEE;
-  display: inline-block;
-  float: left;
-  width: 6%;
-  margin-left: 5%;
-}
-
-#contact input,
-#contact textarea,
-#contact select {
-  padding: 18px 20px;
-  color: #eee;
-  background: #373233;
-  margin-bottom: 42px;
-  border: 0;
-  outline: none;
-  font-size: 15px;
-  line-height: 24px;
-  width: 70%;
-}
-
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
-  color: #fff;
-  background-color: #11ABB0;
-}
-
-#contact button.submit {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color:#fff;
-  background: #0D0D0D;
-  border: none;
-  cursor: pointer;
-  height: auto;
-  display: inline-block;
-  border-radius: 5px;
-  margin-left: 10%;
-  padding: 10px;
-}
-
-#contact button.submit:hover {
-  color: #0D0D0D;
-  background: #fff;
-}
-
-#contact span.required {
-  color: #11ABB0;
-  font-size: 13px;
-}
-
-#message-warning, #message-success {
-  display: none;
-  background: #0F0F0F;
-  padding: 24px 24px;
-  margin-bottom: 36px;
-  width: 65%;
-  margin-left: 26%;
-}
-#message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
-
-#message-warning i,
-#message-success i {
-  margin-right: 10px;
-}
-#image-loader {
-  display: none;
-  position: relative;
-  left: 18px;
-  top: 17px;
 }

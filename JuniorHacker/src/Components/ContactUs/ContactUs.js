@@ -1,92 +1,73 @@
-import React, { Component } from 'react';
+import React from 'react'
+import { Header } from 'semantic-ui-react'
+import {Container, Row, Col, Button,Card} from 'react-bootstrap'
+import Form from 'react-bootstrap/Form'
 import Navigation from "../Common/Navigation/Navigation"
-import Footer from "../Common/Footer/Footer"
 
-class Newsletters extends Component {
-  render() {
 
-    if(this.props.data){
-      // var name = this.props.data.name;
-      // var street = this.props.data.address.street;
-      // var city = this.props.data.address.city;
-      // var state = this.props.data.address.state;
-      // var zip = this.props.data.address.zip;
-      // var phone= this.props.data.phone;
-      // var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
-    }
 
-    return (
-
-   <div>
+const FormExampleFieldControlId = () => (
+   <React.Fragment>
       <Navigation/>
-      <section id="contact">
+      <br></br>
+   <div  style={{backgroundImage:`url(/Images/contact.jpg)`, padding:'25px', width: '100%',height: '100%',backgroundSize:'contain, cover', backgroundRepeat: 'no-repeat',opacity:'0.5',backgroundPosition: 'center'
+   }}>
 
-         <div className="row section-head">
+   <Container>
+      
+  <Row>
+   <Col></Col>
+    <Col>
+    <Header as='h2' style={{fontFamily:'Roman', color:'black', fontSize:' 20px'}}>Get In Touch</Header>
+    <br/>
+    <Form>
+  <Form.Group controlId="exampleForm.ControlInput1">
+  <Form.Row>
+    <Col>
+      <Form.Control placeholder="First name" />
+    </Col>
+    <Col>
+      <Form.Control placeholder="Last name" />
+    </Col>
+  </Form.Row>
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="name@example.com" />
+  </Form.Group>
+  <Form.Group controlId="exampleForm.ControlSelect1">
+    <Form.Label>Gender</Form.Label>
+    <Form.Control as="select">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+      
+    </Form.Control>
+  </Form.Group>
+  <Form.Group controlId="exampleForm.ControlSelect2">
+    <Form.Label>Contact Reasons</Form.Label>
+    <Form.Control as="select" multiple>
+      <option>Help</option>
+      <option>Support</option>
+      <option>Join Our Team</option>
+      <option>Other</option>
+      
+    </Form.Control>
+  </Form.Group>
+  <Form.Group controlId="exampleForm.ControlTextarea1">
+    <Form.Label>Message</Form.Label>
+    <Form.Control as="textarea" rows="3" />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+  </Col>
+    <Col></Col>
+  </Row>
+</Container>
 
-            <div className="two columns header-col">
+</div>
+</React.Fragment>
 
-               <h1><span>Get In Touch.</span></h1>
+)
 
-            </div>
-
-            <div className="ten columns">
-
-                  <p className="lead">{message}</p>
-
-            </div>
-
-         </div>
-
-         <div className="row">
-            <div className="eight columns">
-            
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35"  id="contactName" name="contactName" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
-                  </div>
-					</fieldset>
-               
-				   </form>
-
-           <div id="message-warning"> Please try again!</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
-           </div>
-      </div>
-      </section>
-
-<Footer/>
-   </div>
-
-    );
-  }
-}
-
-export default Newsletters;
+export default FormExampleFieldControlId
