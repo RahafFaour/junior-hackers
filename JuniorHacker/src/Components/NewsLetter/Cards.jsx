@@ -37,7 +37,7 @@ export class Cards extends Component {
 
                     </div>
                 </div>
-                {/* <div style={{position:'relative',top:250}}><Footer/></div> */}
+                <Footer/>
 
             </React.Fragment>
         )

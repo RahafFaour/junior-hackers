@@ -39,6 +39,7 @@ text-decoration: none;
 .header .menu {
 clear: both;
 max-height: 0;
+background-color: green;
 padding-top: 2%;
 transition: max-height .2s ease-out;
 }
