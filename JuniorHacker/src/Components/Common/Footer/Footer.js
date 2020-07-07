@@ -1,66 +1,86 @@
 import React, { Component } from 'react'
 import './Footer.css';
-import logo from "../../../Images/pachalogo2.png"
-import yoreemlogo from "../../../Images/yorfooter.png"
+import {Container, Row, Col,Card} from 'react-bootstrap'
+import { Icon,Button, Divider, Image } from 'semantic-ui-react'
+import annamuntz from '../../../Logo/annamuntz.jpg'
+import haella from '../../../Logo/haella.png'
+import hofstee from '../../../Logo/hofstee.png'
+import pachalogo from '../../../Logo/logo.jpg'
+import logomano from '../../../Logo/logomano.png'
+import logooreem from '../../../Logo/logooreem.png'
+import marina from '../../../Logo/marina.png'
+import weeshuis from '../../../Logo/weeshuis.png'
+import wg from '../../../Logo/wg.png'
+import { Link } from 'react-router-dom';
 
 export class Footer extends Component {
-    render() {
-        return (
-            <div>
-<footer className="footer-distributed" >
+	render() {
 
-			<div className="footer-left">
-            <img id="yoreemlogo" src={yoreemlogo} alt="logo"style={{marginLeft:25,marginTop:10}} />
-			<span><img id="pachalogo" src={logo} alt="logo" style={{width: 222,height:33,marginLeft:20,marginTop:10}}/> </span>
+		return (
+			<div className="myfooter">
+				<h1>CONTACT + INFORMATION</h1>
+				<Container fluid='xs'>
+					<Row>
+						<Col >
+						<h7>Pachachaca:</h7><br></br>
 
-				<h5 style={{marginLeft: 25,marginTop:10,color:'white'}}>Help Us!</h5>
-					<button className="ui positive button"  style={{marginLeft:25}}>Donate</button>
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="marker" > 
+							<a style={{marginLeft: 20}} >Prolongación calle Lamar s/n – Calca – Calca – Cusco</a>
+						</Icon><br></br>
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="phone" > 
+							<a style={{marginLeft: 15}} >+51 84 612495 | +51 84 612603 | +51 984119405 |<br></br> <a style={{marginLeft: 26}}>+51 993876434</a></a>
+						</Icon>
+						<br></br>
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="mail" > 
+
+							<a style={{marginLeft: 10}} href='mailto:info@pachachaca.org'>info@pachachaca.org</a>
+						</Icon>         
+
+						</Col>
+						<Col>
+						<h7>Yoreem:</h7><br></br>
+
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="marker" > 
+							<a style={{marginLeft: 20}} >Bergweg 209b, 3037 EJ Rotterdam</a>
+						</Icon><br></br>
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="phone" > 
+							<a style={{marginLeft: 15}} >0636143980</a>
+						</Icon><br></br>
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="mail" > 
+
+							<a style={{marginLeft: 10}} href='mailto:yoreemfoundation@gmail.com'>yoreemfoundation@gmail.com</a>
+						</Icon>         
+						
+						</Col>
+						<Col>
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="heart" > 
+						<a style={{marginLeft: 15}} >We want to thank our donors and partners for making<a style={{marginLeft:30}}> Pachachaca possible</a></a><br></br>
+						<Icon style={{display:"inline"}} aria-hidden="true"  name="handshake outline" > 
+						<a style={{marginLeft: 15}} >Help Us!<br></br><Link to='/donate'><Button className="ui black basic button"  style={{marginLeft:30, marginTop:5}}> Donate</Button></Link></a>
+						</Icon>  
+						</Icon>  
+						</Col>
+					<Col>
+					<Image.Group size='tiny' style={{marginTop: -34,}}>
+					<Image src={marina} style={{marginTop:-10}} />
+					<Image src={haella} />
+					<Image src={hofstee} />
+					<Image src={wg} />
+					<Image src={annamuntz} />
+					<Image src={logomano} style={{marginTop:-10}} />
+					<Image src={logooreem} style={{marginTop:-15}} />
+					<Image src={weeshuis}  style={{marginTop:-10}}/>
+					{/* <Image src={pachalogo} style={{marginTop:-10}} /> */}
+
+					</Image.Group>	
 					
-
-				<p className="footer-company-name" style={{marginLeft:20,marginTop:10}}>Pachachacha © 2020</p>
-			</div>
-
-			<div className="footer-center">
-
-				<div>
-					<i className="fa fa-map-marker"></i>
-					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
-				</div>
-
-				<div>
-					<i className="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
-				</div>
-
-				<div>
-					<i className="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
-				</div>
+					</Col>
+					</Row>
+				</Container>
 
 			</div>
-
-			<div className="footer-right">
-
-				<p style={{color:'white',marginTop:18}}className="footer-company-about">
-					<span >About the company</span>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-				</p>
-
-				<div className="footer-icons">
-
-					<a href="#"><i className="fa fa-facebook"></i></a>
-					<a href="#"><i className="fa fa-twitter"></i></a>
-					{/* <a href="#"><i className="fa fa-linkedin"></i></a> */}
-					<a href="#"><i className="fa fa-instagram"></i></a>
-
-				</div>
-
-			</div>
-
-		</footer>
-            </div>
-        )
-    }
+		)
+	}
 }
 
 export default Footer

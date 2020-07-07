@@ -30,7 +30,7 @@ color: black;
 display: block;
 float: left;
 font-size: 2em;
-padding: 10px 10px;
+padding: 10px 22px;
 text-decoration: none;
 }
 
@@ -39,6 +39,7 @@ text-decoration: none;
 .header .menu {
 clear: both;
 max-height: 0;
+background-color: green;
 padding-top: 2%;
 transition: max-height .2s ease-out;
 }

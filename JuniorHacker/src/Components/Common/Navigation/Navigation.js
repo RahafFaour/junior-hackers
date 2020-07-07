@@ -17,9 +17,9 @@ export class Navigation extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      const backgroundcolor = window.scrollY < 300 ? "" : "green";
+      const backgroundcolor = window.scrollY < 200 ? "" : "green";
       this.setState({ navBackground: backgroundcolor });
-      const position = window.scrollY < 300 ? "" : "fixed";
+      const position = window.scrollY < 200 ? "" : "fixed";
       this.setState({ position: position });
  
     });

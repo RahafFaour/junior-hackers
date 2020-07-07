@@ -53,6 +53,7 @@ button:hover {
 .slider-wrapper {
   position: relative;
   height: 70vh;
+  
   top: -60px;
 
 }
