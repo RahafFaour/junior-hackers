@@ -56,7 +56,7 @@ export class Footer extends Component {
 						<Icon style={{display:"inline"}} aria-hidden="true"  name="heart" > 
 						<a style={{marginLeft: 15}} >We want to thank our donors and partners for making<a style={{marginLeft:30}}> Pachachaca possible</a></a><br></br>
 						<Icon style={{display:"inline"}} aria-hidden="true"  name="handshake outline" > 
-						<a style={{marginLeft: 15}} >Help Us!<br></br><Link to='/donate'><Button className="ui black basic button"  style={{marginLeft:30, marginTop:5}}> Donate</Button></Link></a>
+						<a style={{marginLeft: 15}} >Help Us!<br></br><Link to='/donate'><Button className="ui green button"  style={{marginLeft:30, marginTop:5}}> Donate</Button></Link></a>
 						</Icon>  
 						</Icon>  
 						</Col>
