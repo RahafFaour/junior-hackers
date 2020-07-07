@@ -4,6 +4,7 @@ import {Container, Row, Col, Button,Card} from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import Map from '../Map/Map.js'
 import Navigation from "../Common/Navigation/Navigation"
+import Footer from "../Common/Footer/Footer"
 
 const FormExampleFieldControlId = () => (
    <React.Fragment>
@@ -67,6 +68,7 @@ const FormExampleFieldControlId = () => (
 
 </div>
 <Map/>
+<Footer/>
 </React.Fragment>
 
 )

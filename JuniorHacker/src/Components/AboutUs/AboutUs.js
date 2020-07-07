@@ -4,6 +4,7 @@ import Personeel from './Personeel'
 import pachalogo2 from '../../Images/pachalogo2.png'
 import yorfooter from '../../Images/yorfooter.png'
 import Navigation from "../Common/Navigation/Navigation"
+import Footer from "../Common/Footer/Footer"
 
 
 export default function AboutUs() {
@@ -58,7 +59,7 @@ export default function AboutUs() {
       </Row>
     </Container>
     <Personeel/>
-      
+      <Footer/>
     </div>
   )
 }
