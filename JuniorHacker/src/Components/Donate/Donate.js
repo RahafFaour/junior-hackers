@@ -6,6 +6,7 @@ import {Media,Container, Col,Row} from 'react-bootstrap'
 import imageDon from './imageDon.jpg'
 import imageDona from './imageDona.jpg'
 import Artikel from './Artikel.pdf'
+import { Button } from 'semantic-ui-react'
 
 
 
@@ -40,7 +41,7 @@ function buildShoppingCart(item) {
       {
         label: item.label,
         amount: {
-          currency: "AUD",
+          currency: "EUR",
           value: item.amount
         }
       }
@@ -48,7 +49,7 @@ function buildShoppingCart(item) {
     total: {
       label: "Total",
       amount: {
-        currency: "AUD",
+        currency: "EUR",
         value: item.amount
       }
     }
@@ -83,6 +84,8 @@ function Donate() {
   const [items] = useState(storeItems);
   
   return (
+    <React.Fragment>
+
     <Container>
       <Navigation/>
       <br/><br/>
@@ -91,6 +94,7 @@ function Donate() {
     <React.Fragment>  
           
     <div className="Donate" border="success" style={{ width: '38rem', marginLeft: '0' }}>
+      <br></br>
       <h1>U heeft dit werk met uw bijdrage aan Yoreem mede mogelijk gemaakt. Namens alle betrokkenen zeggen wij u daarvoor </h1>
       <div>
         <h2>heel hartelijk dank!</h2>
@@ -98,13 +102,14 @@ function Donate() {
           {items.map((item, index) => (
             <li>
               <p className="items__label">{item.label}</p>
-              <span>${item.amount}</span>
-              <button 
-                className="items__button"
+              <span>€{item.amount}</span><br></br>
+              <Button 
+                className="ui green button"
+                id="items__button"
                 onClick={() => buyItem(item)}
                 type="button">
                 Click to donate
-              </button>
+              </Button>
             </li>
           ))}
         </ul>
@@ -163,10 +168,11 @@ function Donate() {
 
      </Col>
      </Row>
-      <Footer/>
     </Container>
 
+    <Footer/>
 
+</React.Fragment>
     
 
   );

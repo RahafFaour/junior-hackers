@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import './Footer.css';
-import {Container, Row, Col,Card} from 'react-bootstrap'
-import { Icon,Button, Divider, Image } from 'semantic-ui-react'
+import {Container, Row, Col} from 'react-bootstrap'
+import { Icon,Button, Image } from 'semantic-ui-react'
 import annamuntz from '../../../Logo/annamuntz.jpg'
 import haella from '../../../Logo/haella.png'
 import hofstee from '../../../Logo/hofstee.png'
-import pachalogo from '../../../Logo/logo.jpg'
 import logomano from '../../../Logo/logomano.png'
 import logooreem from '../../../Logo/logooreem.png'
 import marina from '../../../Logo/marina.png'

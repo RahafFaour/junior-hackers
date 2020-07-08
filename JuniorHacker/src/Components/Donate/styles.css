@@ -9,6 +9,7 @@
     border-color: 'green';
     margin-left: 20%;
     margin-top: 10%;
+  
   }
   
   .items {
@@ -23,7 +24,7 @@
     
   }
   
-  .items__button {
+  #items__button {
     display: block;
     margin: 0 auto;
   } 
@@ -37,8 +38,8 @@
  }
 
  .Donate h1 {
-  margin-top: 30px;
-   font-style: ' Roman';
+  margin-top: 10px;
+   font-style: 'Roman';
    font-size: 18px;
    color: rgb(29, 27, 27);
  }
