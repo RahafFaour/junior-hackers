@@ -1,0 +1,105 @@
+
+
+.jumbotron{
+    background-image:url(./images/0001.jpg);
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 35em;
+    color: white;
+}
+.container{
+
+  width: 100%; 
+  
+     
+}
+
+
+/*text start*/
+
+body {
+    background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+  
+}
+.programs .title h2{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 30px;
+    color: #000000;
+    position: relative;
+    padding-bottom: 0px;
+    position: relative;
+}
+.programs .title h2::before{
+    background-color: #febd01;
+    content: '';
+    height: 2px;
+    width: 70%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    
+}
+.programs .program-header{
+    text-align: center;
+    line-height: 50px;
+    padding-top: 100px;
+    
+}
+.programs .program-header h5{
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: ivory;
+}
+
+
+
+.programs .program-text p{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color:black;
+    margin:0 0 20px ;
+    padding-left: 10px;
+
+}
+
+.programs .cardd{
+    margin-bottom:25px;
+    
+ border: 1px solid #eeeeee;
+ position: relative;
+ border-radius: 10px;
+}
+.programs .cardd:hover{
+    box-shadow: 5px 10px 20px 20px rgba(0, 0, 0, 0.253) !important;
+}
+.programs .cardd::before{
+    background-color: #febd01;
+    content: '';
+    height: 2px;
+    width: 60px;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transition: all .5s ease;
+}
+.programs .cardd:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+
+/*text end*/
