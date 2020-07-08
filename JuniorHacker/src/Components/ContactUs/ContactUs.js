@@ -1,10 +1,10 @@
-import React from "react";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
-import Map from "../Map/Map.js";
-import Navigation from "../Common/Navigation/Navigation";
-import contact from "./contact.jpg";
-import Footer from "../Common/Footer/Footer";
+import React from 'react'
+import {Container, Row, Col, Button,Card} from 'react-bootstrap'
+import Form from 'react-bootstrap/Form'
+import Map from '../Map/Map.js'
+import Navigation from "../Common/Navigation/Navigation"
+import contact from './contact.jpg'
+import Footer from "../Common/Footer/Footer"
 
 const FormExampleFieldControlId = () => (
   <React.Fragment>
@@ -65,11 +65,12 @@ const FormExampleFieldControlId = () => (
           </Col>
         </Row>
       </Container>
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-    <Footer />
-  </React.Fragment>
-);
-export default FormExampleFieldControlId;
+          </div>
+          <br></br><br></br>
+          <Footer/>
+      
+          </React.Fragment>
+        
+          )
+
+export default FormExampleFieldControlId
