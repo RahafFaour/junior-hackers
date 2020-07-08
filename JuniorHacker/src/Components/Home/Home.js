@@ -7,6 +7,10 @@ import 'react-animated-slider/build/horizontal.css';
 import "react-animated-slider/build/horizontal.css";
 import "normalize.css/normalize.css";
 
+import Services from "../Home/services/services"
+import  "./services/services.css"
+
+
 import Footer from "../Common/Footer/Footer"
 import { Container, Row, Col } from 'react-bootstrap';
 import SimpleImageSlider from "react-simple-image-slider";
@@ -39,8 +43,10 @@ class Home extends Component {
                 {/* </Col> */}
 {/* </Row> */}
         </Container>
+        
+        <Services/>
 
-  
+      
         <Footer/>
       </div>
     );
