@@ -34,20 +34,26 @@
 
  #img1 {
     display:inline;
-    width:250px;
-    height:250px;
-
+    width: 550px;
+    height: 250px;
   }
 
-#img2{
-  width:50%;
+#img2 {
+  width: 60%;
+  height: 60%;
   display:inline;
 }
-#img3{
-  width:50%;
+
+#img3 {
+  width: 80%;
+  height: 80%;
   display:inline;
+  padding: 20px 0 0 30px;
 }
-#img4{
-  width:50%;
+#img4 {
+  width: 70%;
+  height: 70%;
   display:inline;
+  padding: 0 0 0 20px;
 }
+
