@@ -5,7 +5,7 @@ import image2 from "../../Images/1.JPG";
 import image3 from "../../Images/22.JPG";
 import "./styles.css";
 import Navigation from "../Common/Navigation/Navigation";
-
+import Services from "./Services"
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -70,6 +70,8 @@ class Home extends React.Component {
 
           <RightArrow goToNextSlide={this.goToNextSlide} />
         </div>
+        <Services/>
+        <Footer/>
       </React.Fragment>
     );
   }

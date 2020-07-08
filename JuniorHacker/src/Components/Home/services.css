@@ -1,0 +1,108 @@
+
+.services{
+    margin-top: 100px;
+}
+
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+   
+  }
+  .section-title h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #000000;
+    position: relative;
+    padding-bottom: 0px;
+  }
+  .section-title h1::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    right: 30px;
+    height: 2px;
+    background-color: #febd01;
+    bottom: 0px;
+  }
+  
+  .services {
+    background-color: #f5f8fd;
+    padding: 100px 0px 70px;
+  }
+  
+  .text-center {
+    text-align: center !important;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+  .text-right {
+    text-align: right !important;
+  }
+  .services .section-title h1:before {
+    left: 30%;
+  }
+  .services .service-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .services .service-content .box {
+    background-color: #ffffff;
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+  }
+  .services .service-content .box::before {
+    background-color: #febd01;
+    content: "";
+    height: 2px;
+    width: 60px;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+  }
+  .services .service-content .box:hover::before {
+    width: 100%;
+  }
+  .services .service-content .box .icon {
+    height: 60px;
+    width: 60px;
+    background-color: #febd01;
+    margin: 15px auto 20px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .services .service-content .box .icon .fa {
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 60px;
+  }
+  .services .service-content .box h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+  }
+  .services .service-content .box p {
+    margin: 10px 0 0 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+  }
