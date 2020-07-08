@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './NewsLetter.css'
+import newsletter1 from './nieuwsbrief.pdf'
 
 const NewsLetter = props => {
     return (
@@ -14,7 +15,7 @@ const NewsLetter = props => {
                     <p className="card-text text-secondary">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
                     </p>
-                    <a href="#" className="btn btn-outline-dark">Complete Reading</a>
+                    <a href={newsletter1} className="btn btn-outline-dark" target="_blank">Complete Reading</a>
                 </div>
             </div>
         </div>
