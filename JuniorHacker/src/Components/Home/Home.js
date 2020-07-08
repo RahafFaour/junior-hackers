@@ -1,8 +1,9 @@
 import React from "react";
 import Footer from "../Common/Footer/Footer";
-import image1 from "../../Images/image1.jpg";
-import image2 from "../../Images/image2.jpg";
-import image3 from "../../Images/image3.jpg";
+import image1 from "../../Images/image2.jpg";
+import image2 from "../../Images/1.JPG";
+import image3 from "../../Images/22.JPG";
+
 import "./styles.css";
 import Navigation from "../Common/Navigation/Navigation";
 
@@ -11,7 +12,7 @@ class Home extends React.Component {
     super(props);
 
     this.state = {
-      images: [image2, image1, image3],
+      images: [image1, image2 , image3],
       currentIndex: 0,
       translateValue: 0,
     };
@@ -81,7 +82,7 @@ const Slide = ({ image }) => {
     backgroundSize: "cover",
     width: "100%",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    backgroundPosition: "40% 40%",
   };
   return <div className="slide" style={styles}></div>;
 };
