@@ -10,7 +10,7 @@ const EmbedExampleIframe = () => (
     hd={false}
     id='gJscrxxl_Bg'
     iframe={{
-      src:"https://www.youtube.com/embed/H1MNJDkhlQc&list=PL3R9LNtBGCpwViqZfWDZEk-fbHjDl0QEE&index=26",       
+      src:"https://www.youtube.com/embed/oESWS-jqGjE",       
       allowFullScreen: true,
       style: {
         padding: 10,

@@ -33,7 +33,7 @@
 
 .nextArrow {
   position: absolute;
-  top: 58%;
+  top: 50%;
   right: 25px;
   z-index: 999;
   color: #fff;
@@ -41,7 +41,7 @@
 
 .backArrow {
   position: absolute;
-  top: 58%;
+  top: 50%;
   left: 25px;
   z-index: 999;
   color: #fff;
@@ -53,7 +53,7 @@
 
 }
 .backArrow:hover, .nextArrow:hover {
-  color:white;
+  color:gree;
   opacity: 0.9;
 }
 #vids {

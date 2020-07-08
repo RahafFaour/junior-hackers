@@ -5,7 +5,6 @@ import image2 from '../../Images/image2.jpg'
 import image3 from '../../Images/image3.jpg'
 import './styles.css'
 import Navigation from "../Common/Navigation/Navigation"
-import {Container, Row, Col, Button,Card} from 'react-bootstrap'
 
 class Home extends React.Component {
   constructor(props) {
@@ -13,8 +12,8 @@ class Home extends React.Component {
 
     this.state = {
       images: [
-            image1,
             image2,
+            image1,
             image3,
 
             

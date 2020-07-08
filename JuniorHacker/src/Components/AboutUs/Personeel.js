@@ -37,8 +37,8 @@ const Personeel = () => {
                alt="Generic placeholder"/>
               
           <Media.Body>
-               <h5 style={{fontFamily:'Roman', color:'black', fontWeight: 'bold',display: 'flex',  justifyContent: 'center'}}>Liesbeth Kerstens</h5>
-               <p style={{fontFamily:'Roman', color:'black',justifyContent:'end'}}>
+               <h5 style={{fontFamily:'Roman', color:'black', fontWeight: 'bold'}}>Liesbeth Kerstens</h5>
+               <p style={{fontFamily:'Roman', color:'black',justifyContent:'center'}}>
                studied Leisure Management at the College of Tourism and Traffic in Breda and completed a master's degree in International Development Studies at the University of Amsterdam. She relocated and lived in Cusco, Peru between 2004 and 2009, during which time she created the Peruvian foundation Asociación Pasa la Voz. This foundation used to operate in the Cusco region to improve the living conditions of children who grow up in different forms of childcare. Pasa la Voz trained the staff of childcare organizations on pedagogical levels and promoted the active participation of children. Due to the success of Pasa la Voz, their methodologies had been translated into the Dutch environment at the request of the Municipality of Rotterdam. This led to the establishment of the Hoedje van Papier foundation, with Liesbeth as the then director in 2009. This foundation assists Rotterdammer’s adults and children in vulnerable situations to acquire skills toward active participation in society. Hoedje van Papier foundation was selected by the Oranjefonds (Royal funding organization in Holland) for the so-called ‘Growth Program’. Thanks to participation in this program and because of her commitment to the Dutch society, Liesbeth received a award from King Willem-Alexander.    
                </p>
                <div className="social-links">

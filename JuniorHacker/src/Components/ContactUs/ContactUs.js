@@ -36,7 +36,7 @@ const FormExampleFieldControlId = () => (
           </Col>
           <Col sm={6}>
           <Card  style={{ width: '30rem' }} border="success">
-                    <Card.Img variant="top" src={contact} style={{opacity: 0.5}}/>
+                    <Card.Img  src={contact} style={{opacity: 0.5}}/>
                     <Card.Body>
                       <Card.Text>
                     <br/>
@@ -67,7 +67,7 @@ const FormExampleFieldControlId = () => (
           </Col>
         </Row>
       </Container>
-          </div><br></br>
+          </div><br></br><br></br><br></br>
           <Footer/>
           </React.Fragment>
           )
