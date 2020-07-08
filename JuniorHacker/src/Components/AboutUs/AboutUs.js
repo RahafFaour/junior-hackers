@@ -58,7 +58,7 @@ export default function AboutUs() {
         </Col>
       </Row>
     </Container>
-    <Personeel/>
+    <Personeel/><br></br>
       <Footer/>
     </div>
   )
