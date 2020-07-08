@@ -3,7 +3,6 @@ import Footer from "../Common/Footer/Footer";
 import image1 from "../../Images/image2.jpg";
 import image2 from "../../Images/1.JPG";
 import image3 from "../../Images/22.JPG";
-
 import "./styles.css";
 import Navigation from "../Common/Navigation/Navigation";
 
