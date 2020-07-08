@@ -3,19 +3,25 @@
   position:fixed;
   border-top:1px solid #aaa;
   bottom:-120px;
-  background-color:white;
+  background-color:#F3FCF8;
   height:160px;
-  font-family:sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   transition:all 0.2s ease;
   padding-left:20px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .myfooter:hover{
   bottom:0;
 }
+.myfooter a{
+  font-family: Arial, Helvetica, sans-serif;
 
+}
 .myfooter h1{
   color:#000;
+  font-family: Arial, Helvetica, sans-serif;
   margin:0;
   float:left;
   width:100%;
@@ -23,8 +29,10 @@
   padding:10px  10px 0;
   margin-bottom: 30px;
   text-align:center;
-  font-size:12pt;
-  text-transform:uppercase;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+   text-transform:uppercase;
   letter-spacing:5px;
   word-spacing:15px;
 }
