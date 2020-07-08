@@ -33,7 +33,7 @@ class Home extends Component {
 
         <SimpleImageSlider   style={{marginTop:10,marginLeft:35, objectFit:'cover'}}
                     width={'96%'}
-                    height={605}
+                    height={505}
                     images={images}
                 />
                 {/* </Col> */}

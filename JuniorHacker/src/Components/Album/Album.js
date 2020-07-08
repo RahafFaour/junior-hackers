@@ -8,6 +8,7 @@ import album3 from "../../Images/album3.jpg"
 import album4 from "../../Images/album4.jpg"
 import album5 from "../../Images/album5.jpg"
 import album6 from "../../Images/album6.jpg"
+import Footer from "../Common/Footer/Footer"
 
 
 function Album() {
@@ -178,7 +179,7 @@ function Album() {
       </Col>
     </Row>
     </Container>
-     
+     <Footer/>
     </div>
   )
 }

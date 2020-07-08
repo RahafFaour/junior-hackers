@@ -96,8 +96,9 @@ function Donate() {
         </ul>
       </div>
       
-      {/* <Footer/> */}
     </div>
+    <Footer/>
+
     </React.Fragment>
 
   );
