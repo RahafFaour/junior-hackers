@@ -17,9 +17,9 @@ export class Navigation extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      const backgroundcolor = window.scrollY < 200 ? "" : "green";
+      const backgroundcolor = window.scrollY < 280 ? "" : "green";
       this.setState({ navBackground: backgroundcolor });
-      const position = window.scrollY < 200 ? "" : "fixed";
+      const position = window.scrollY < 280 ? "" : "fixed";
       this.setState({ position: position });
  
     });
@@ -64,7 +64,7 @@ export class Navigation extends Component {
           <Col >
             <div className="header" style={{ backgroundColor: 'green', width: '100%', borderRadius: 10, height: 70, position: `${this.state.position}`,right:5,top:0}} >
      
-              <a href="" className="logo"><img src={yoreemlogo} style={{ width: 35, paddingRight: 10 }} /><img src={logo} style={{ width: 95 }} /></a>
+              <a href="" className="logo"><img src={yoreemlogo} style={{ width: 45, paddingRight: 10 }} /><img src={logo} style={{ width: 40, height: 38,borderRadius: '50%', }} /></a>
               <input className="menu-btn" type="checkbox" id="menu-btn" />
               <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
               <ul className="menu" >

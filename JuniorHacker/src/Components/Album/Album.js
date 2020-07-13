@@ -5,8 +5,8 @@ import {Container, Row, Col} from 'react-bootstrap'
 import album1 from "../../Images/album1.jpg"
 import album2 from "../../Images/album2.jpg"
 import album3 from "../../Images/album3.jpg"
-import album4 from "../../Images/album4.jpg"
-import album5 from "../../Images/album5.jpg"
+import album4 from "../../Images/2.JPG"
+import album5 from "../../Images/album2.jpg"
 import album6 from "../../Images/album6.jpg"
 import Footer from "../Common/Footer/Footer"
 
@@ -179,6 +179,7 @@ function Album() {
       </Col>
     </Row>
     </Container>
+    <br></br><br></br><br></br>
      <Footer/>
     </div>
   )

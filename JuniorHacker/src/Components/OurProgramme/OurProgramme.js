@@ -8,10 +8,11 @@ export class programs extends Component {
     return (
       <div class="section">
         <Navigation />
+        <br></br>
 
         <div className="jumbotron jumbotron-fluid">
           <div className="container">
-            <h1 className="disblay-3">Welcome</h1>
+            <h1 className="display-3">Welcome</h1>
             <p className="lead">take a look about our programs</p>
           </div>
         </div>
